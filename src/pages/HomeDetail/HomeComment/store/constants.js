@@ -1,0 +1,3 @@
+export const GET_COMMENTS_LIST = 'GET_COMMENTS_LIST'
+export const GET_LOADING = 'GET_LOADING'
+export const GET_NAV_LIST = 'GET_NAV_LIST'
