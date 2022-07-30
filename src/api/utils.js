@@ -44,3 +44,17 @@ export const backGroundColor = (str) => {
 
    }
 }
+
+export const menuBgChange = () => {
+   let boxs = document.querySelectorAll('.menu-item')
+   for (let i = 0; i < boxs.length; i++) {
+      boxs[i].addEventListener('click', function (e) {
+         for (let j = 0; j < boxs.length; j++) {
+            boxs[j].classList.remove('siderbar-bg')
+         }
+         this.classList.add('siderbar-bg')
+      })
+
+
+   }
+}

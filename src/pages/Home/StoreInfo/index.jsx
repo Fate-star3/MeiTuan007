@@ -2,17 +2,17 @@ import React, { useEffect, useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Wrapper, EnterLoading } from './style'
 // 组件
-// import Scroll from '@/components/common/Scroll'
+import Scroll from '@/components/common/Scroll'
 import BScroll from 'better-scroll'
 // 图片延迟加载
 import LazyLoad from 'react-lazyload'
-// import { forceCheck } from 'react-lazyload'
+import { forceCheck } from 'react-lazyload'
 import Loading from '@/components/common/loading'
 
 const StoreInfo = (props) => {
     const { restaurants, loading } = props
     const [data = restaurants ,setData ] =useState()
-    const lazyLoad = useRef()
+    // const lazyLoad = useRef()
     useEffect(() => {
         // function callback() {
         //     const top = lazyLoad.current.getBoundingClientRect().top;
@@ -37,7 +37,7 @@ const StoreInfo = (props) => {
     }, [])
     return (
         <Wrapper>
-            {/* <Scroll onScoll={forceCheck}  pullDownLoading={true}> */}
+            <Scroll onScoll={forceCheck}  >
             <ul className='wrapper' >
                 {
                     data.map((item) => {
@@ -52,8 +52,7 @@ const StoreInfo = (props) => {
                                     <div className="poilist-item" style={{ position: "relative" }}>
                                         <div className="poilist-item-icon">
                                             <LazyLoad
-                                                scrollContainer='.wrapper'
-                                                scroll={true}
+                                               
                                                 placeholder={<img width="100%" height="100%" src='/src/assets/images/loading.gif' />}
                                             >
                                                 <img className="poilist-item-icon-pic" src={item.pic} />
@@ -137,7 +136,7 @@ const StoreInfo = (props) => {
                         )
                     })
                 }
-               <div className="loadMore" ref={lazyLoad}>加载更多</div>
+               {/* <div className="loadMore" ref={lazyLoad}>加载更多</div> */}
             </ul>
             {
                 loading ?
@@ -145,7 +144,7 @@ const StoreInfo = (props) => {
                         <Loading></Loading>
                     </EnterLoading> : null
             }
-            {/* </Scroll> */}
+            </Scroll>
         </Wrapper>
 
     )

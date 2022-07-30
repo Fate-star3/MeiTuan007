@@ -1,24 +1,5 @@
 {
 	"data": {
-		"container_operation_source": {
-			"tag_name": "专场",
-			"tag_icon": "http://p1.meituan.net/xianfu/a4167074795cfb33d819fd0590d1545b2048.png",
-			"operation_source_list": [
-				{
-					"scheme": "meituanwaimai://waimai.meituan.com/productset?wmpoiid=495579&productsettag=1239222&provider=0",
-					"content": "",
-					"pic_url": "http://p1.meituan.net/xianfu/6588840adbcfbfe2c7a43aa69d4b36da107767.jpg",
-					"sequence": 0,
-					"type": 1
-				}, {
-					"scheme": "meituanwaimai://waimai.meituan.com/productset?wmpoiid=495579&productsettag=1239645&provider=0",
-					"content": "",
-					"pic_url": "http://p1.meituan.net/xianfu/378446763167442a511dc9d4c675d877144571.jpg",
-					"sequence": 0,
-					"type": 1
-				}
-			]
-		},
 		"food_spu_tags": [
 			{
 				"name": "热销",
@@ -2234,7 +2215,7 @@
 						"id": 97101292,
 						"name": "开心乐园餐（汉堡包）配小玉米",
 						"min_price": 20,
-						"praise_num": 0,
+						"praise_num": 1,
 						"praise_content": "赞0",
 						"tread_num": 0,
 						"praise_num_new": 0,
@@ -2260,7 +2241,7 @@
 						"id": 97101293,
 						"name": "开心乐园餐（麦乐鸡）配小玉米",
 						"min_price": 21,
-						"praise_num": 0,
+						"praise_num": 2,
 						"praise_content": "赞0",
 						"tread_num": 0,
 						"praise_num_new": 0,
@@ -2286,7 +2267,7 @@
 						"id": 221795398,
 						"name": "开心乐园餐配小薯条",
 						"min_price": 21,
-						"praise_num": 0,
+						"praise_num": 3,
 						"praise_content": "赞0",
 						"tread_num": 0,
 						"praise_num_new": 0,
@@ -2312,7 +2293,7 @@
 						"id": 221795399,
 						"name": "开心乐园餐（汉堡包）配小薯条",
 						"min_price": 20,
-						"praise_num": 0,
+						"praise_num": 4,
 						"praise_content": "赞0",
 						"tread_num": 0,
 						"praise_num_new": 0,
@@ -2338,7 +2319,7 @@
 						"id": 97101200,
 						"name": "开心乐园餐配小玉米",
 						"min_price": 21,
-						"praise_num": 0,
+						"praise_num": 5,
 						"praise_content": "赞0",
 						"tread_num": 0,
 						"praise_num_new": 0,
@@ -2363,24 +2344,8 @@
 					}
 				]
 			}
-		],
-		"poi_info": {
-			"name": "厦门麦当劳明智餐厅",
-			"shipping_time": "00:00-04:45,05:00-10:15,10:30-23:59",
-			"wm_poi_score":4.7,
-			"discounts2": [
-				{
-					"info": "新用户立减17元,首次使用银行卡支付最高再减3元",
-					"icon_url": "http://p0.meituan.net/xianfu/019d1bbb1310b1531e6af6172c9a5095581.png"
-				}
-			],
-			"shipping_fee_tip": "配送 ¥9",
-			"min_price_tip": "起送 ¥0",
-			"delivery_time_tip": "30分钟",
-			"poi_back_pic_url": "http://p1.meituan.net/aichequan/dfd39d77d47dfd6df4e1c07ab2e87458193641.png",
-			"pic_url": "http://p0.meituan.net/xianfu/fd3a8462080c71f60f2581c2e7c1d3f43010.jpeg",
-			"head_pic_url": "http://p0.meituan.net/xianfu/19c002c5963a289206e756092995a2fe230070.jpg"
-		}
+		]
+		
 	},
 	"code": 0,
 	"msg": "成功"

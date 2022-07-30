@@ -1,26 +1,88 @@
-import React, { useState, useEffect} from 'react'
-import { Wrapper,EnterLoading } from './style'
-import { getGoodsList } from './store/actionCreators'
+import React, { useState, useEffect ,useRef} from 'react'
+import { Wrapper, EnterLoading } from './style'
+import {
+  getGoodsList,
+  changeGoodsNumAction,
+  changeGoodsAllNumAction
+} from './store/actionCreators'
 import { connect } from 'react-redux'
+import {menuBgChange} from '@/api/utils.js'
 // 组件
 import Scroll from '@/components/common/Scroll'
 import ShoppingCart from '@/components/ShoppingCart'
 // 图片延迟加载
 import LazyLoad, { forceCheck } from 'react-lazyload'
 import Loading from '@/components/common/loading'
-function HomeOrder(props) {
 
-  const { goods:details, loading } = props
-  const { getGoodsListDispatch } = props
-  console.log(details);
+function HomeOrder(props) {
+  const {
+    goods: details,
+    loading,
+    price,
+    singleCart } = props
+  // console.log(singleCart);
+  const {
+    getGoodsListDispatch,
+    changeGoodsNumDispatch,
+    changeGoodsAllNumDispatch } = props
+
+  // console.log(details);
+
   useEffect(() => {
     getGoodsListDispatch()
+    
   }, [])
+ 
+
+  // 商品数量加减
+  const changeGoodNum = (e, status, id) => {
+    e.preventDefault();
+    e.stopPropagation();
+    let data = {
+      status: status,
+      id: id
+    }
+    changeGoodsNumDispatch(data)
+  }
+  // 点击 获取右侧商品的id 然后scrollIntoView事件方法滚动到对应位置
+  const scrollToAnchorLeft = (anchorName) => {
+    if (anchorName) {
+      let anchorElement = document.getElementById(anchorName)
+      // console.log(anchorElement.scrollTop);
+      // console.log(anchorElement);
+      anchorElement && anchorElement.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth'
+      })
+    }
+    return true
+  }
+  const cartNumber = () => {
+    let num = 0
+    details.map((item) => {
+      if (item.name != '热销') {
+        item.spus.map((ele) => {
+          num += ele.praise_num
+        })
+      }
+    })
+    return num
+  }
+  const clearCart = () => {
+    changeGoodsAllNumDispatch()
+  }
+
   const sideBarList = () => {
     return details.map((item, index) => {
+      let num = 0
+      item.spus.map((ele) => {
+        num += ele.praise_num
+      })
+
       return (
-        <li className="menu-item" key={index} >
-          <div className="text">
+        <li className="menu-item" key={index} onClick={(e) => { scrollToAnchorLeft(item.name)&& menuBgChange()}} >
+          <div className="text" >
+            {num > 0 && <div className="menu-item-icon menu-item-iconv2">{num}</div>}
             <img src={item.icon ? item.icon : ''} style={{ width: "15px" }} />
             {item.name}
           </div>
@@ -31,10 +93,10 @@ function HomeOrder(props) {
   const goodsContent = () => {
     return details.map((item, index) => {
       return (
-        <li className="food-list food-list-hook" key={index}>
+        <li className="food-list food-list-hook" key={index} id={item.name}>
           <h3 className="title">{item.name}</h3>
           {/* <!-- 具体的商品列表 --> */}
-          <ul>
+          <ul >
             {
               item.spus.map((item) => {
                 return (
@@ -55,21 +117,19 @@ function HomeOrder(props) {
                           <span className="unit">/{item.unit}</span>
                         </div>
                         <div className="price-right" >
-                          {false &&
+                          {item.praise_num > 0 &&
                             <span className="price-right_reduce">
-                              <span className="reduce-box">
+                              <span className="reduce-box" onClick={(e) => changeGoodNum(e, 'reduce', item.id)}>
                               </span>
-                            </span>}
-                          <span className="price-right_num">{item.praise_num}</span>
+                            </span>
+                          }
+                          <span className="price-right_num">{item.praise_num ? item.praise_num : ''}</span>
                           <span className="price-right_add" >
-                            <span className="reduce-box">
+                            <span className="add-box" onClick={(e) => changeGoodNum(e, 'add', item.id)}>
                             </span>
                           </span>
                         </div>
                       </div>
-
-                    </div>
-                    <div className="cartcontrol-wrapper">
 
                     </div>
                   </li>
@@ -94,12 +154,16 @@ function HomeOrder(props) {
         </div>
         {/* <!--商品列表--> */}
         <div className="foods-wrapper" >
-          <ul>
+          <ul className='food-container'>
             {goodsContent()}
           </ul>
         </div>
       </div>
-      <ShoppingCart/>
+      <ShoppingCart
+        price={price}
+        cartNumber={cartNumber}
+        clearCart={clearCart}
+        singleCart={singleCart} />
       {
         loading ?
           <EnterLoading>
@@ -111,15 +175,37 @@ function HomeOrder(props) {
 }
 
 const mapStateToProps = (state) => {
+  let arr = []
+  state.goods.GoodsList.forEach((item) => {
+    if (item.name != '热销') {
+      item.spus.forEach((item) => {
+        let price = 0
+        price += (item.praise_num > 0 ? item.min_price * item.praise_num : 0)
+        arr.push(price)
+      })
+    }
+  })
+
+
   return {
     goods: state.goods.GoodsList,
     loading: state.goods.Loading,
+    singleCart: state.goods.SingleCart,
+    price: arr.reduce((pre, curr) => pre += curr, 0)
+
+
   }
 }
 const mapDispatchToProps = (dispatch) => {
   return {
     getGoodsListDispatch() {
       dispatch(getGoodsList())
+    },
+    changeGoodsNumDispatch(data) {
+      dispatch(changeGoodsNumAction(data))
+    },
+    changeGoodsAllNumDispatch(data) {
+      dispatch(changeGoodsAllNumAction(data))
     },
 
 

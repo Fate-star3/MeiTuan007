@@ -12,6 +12,10 @@ export const EnterLoading = styled.div`
 `
 export const Wrapper = styled.div`
 
+
+.siderbar-bg {
+  background-color: #fff;
+}
 .goods {
     display: flex;
     position: absolute;
@@ -80,7 +84,9 @@ export const Wrapper = styled.div`
   .goods .foods-wrapper .food-list {
     padding: 11px;
   }
-
+.food-container {
+    margin-bottom:2rem;
+}
   .goods .foods-wrapper .food-list .title {
     height: 13px;
     font-size: 13px;
@@ -201,15 +207,11 @@ export const Wrapper = styled.div`
 
   .price-right {
     font-size: 16px;
-    display: -webkit-inline-flex;
     display: inline-flex;
-    -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-align-items: center;
     align-items: center;
     background-color: #FFFFFF;
-}
-.price-right_reduce {
+    .price-right_reduce {
     background-image: url("https://p0.meituan.net/openhfiveimages/86a6957f27823b06a23c26be8aea5579725.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -220,7 +222,7 @@ export const Wrapper = styled.div`
     background-size: 5.33333333vw 5.33333333vw;
     position: relative;
 }
-.reduce-box {
+.reduce-box, .add-box {
     position: absolute;
     left: -3.33333333vw;
     right: -3.33333333vw;
@@ -256,5 +258,29 @@ export const Wrapper = styled.div`
     right: -3.33333333vw;
     top: -3.33333333vw;
     bottom: -3.33333333vw;
+}
+}
+
+
+
+.menu-item-icon.menu-item-iconv2 {
+    width: 36px;
+    border-radius: 12px;
+}
+.menu-item-icon {
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    color: #fff;
+    background-color: #FB4E44;
+    font-size: 10px;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+    line-height: 24px;
+    -webkit-transform: scale(0.5) translate(50%, -50%);
+    transform: scale(0.5) translate(50%, -50%);
+    border-radius: 50%;
+    text-align: center;
 }
 `

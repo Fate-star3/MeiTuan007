@@ -75,7 +75,7 @@ function HomeComment(props) {
   }
   return (
     <Wrapper>
-
+      <Scroll onScroll = {forceCheck}>
       <div className="rating">
         <div className="rating-left">
           <div className="rating-left-hd">4.5</div>
@@ -186,6 +186,7 @@ function HomeComment(props) {
             <Loading></Loading>
           </EnterLoading> : null
       }
+      </Scroll>
     </Wrapper>
   )
 }

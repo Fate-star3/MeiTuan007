@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Wrapper } from './style'
 import { Link } from 'react-router-dom'
 
 // 子组件一般不做数据请求 由父组件统一并传参过来
 export default function CitySelect(props) {
   let { cityName } = props
-  window.sessionStorage.getItem("cityName") ? cityName = window.sessionStorage.getItem("cityName") : (window.sessionStorage.cityName = props.cityName)
+
+cityName =='' && window.sessionStorage.getItem("cityName") ? cityName = window.sessionStorage.getItem("cityName") : (window.sessionStorage.cityName = cityName)
+
+
   return (
     <Wrapper>
       <Link

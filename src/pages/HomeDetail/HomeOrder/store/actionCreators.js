@@ -12,6 +12,16 @@ export const changeLoading = (data) => ({
     data
 })
 
+// data  {goodsId, status: "add|minus"}
+export const changeGoodsNumAction = (data) => ({
+    type: actionTypes.CHNAGE_GOODS_NUM,
+    data: data
+})
+export const changeGoodsAllNumAction = (data) => ({
+    type: actionTypes.CHNAGE_GOODSAll_NUM,
+    data: data
+})
+
 export const getGoodsList = () => {
     return (dispatch) => {
         getHomeDetailOrderRequest().then(data => {
