@@ -1,4 +1,4 @@
-import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L as _,c as A,o as C,q as B}from"./index.eebb2df6.js";const G=i=>({type:y,data:i}),L=i=>({type:z,data:i}),j=i=>({type:F,data:i}),S=i=>({type:E,data:i}),O=()=>i=>{N().then(c=>{const s=G(c.data.data.food_spu_tags);i(s),i(L(!1))})},H=b.div`
+import{k,l as y,G as z,m as F,n as E,s as b,r as D,j as e,f as t,d as x,L as _,c as A,o as C,q as B}from"./index.51f0f82d.js";const G=i=>({type:y,data:i}),L=i=>({type:z,data:i}),j=i=>({type:F,data:i}),S=i=>({type:E,data:i}),O=()=>i=>{k().then(c=>{const s=G(c.data.data.food_spu_tags);i(s),i(L(!1))})},H=b.div`
     position: fixed;
     left: 0;
     right: 0;
@@ -16,7 +16,7 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
 .goods {
     display: flex;
     position: absolute;
-    top: 280px;
+    top: 12.73rem;
     bottom: 0px;
     overflow: hidden;
     width: 100%;
@@ -24,7 +24,7 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
   }
 
   .goods .menu-wrapper {
-    flex: 0 0 85px;
+    flex: 0 0 3.86rem;
     background: #f4f4f4;
     /* overflow-y: overlay; */
   }
@@ -38,7 +38,7 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
 
   .goods .menu-wrapper .menu-item {
     list-style-type: none;
-    padding: 16px 23px 15px 10px;
+    padding: 0.72rem 1.05rem 0.68rem 0.45rem;
     border-bottom: 1px solid #E4E4E4;
     position: relative;
   }
@@ -49,63 +49,60 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
   }
 
   .goods .menu-wrapper .menu-item .text {
-    font-size: 13px;
+    font-size: 0.6rem;
     color: #333333;
-    line-height: 17px;
+    line-height: 0.77rem;
     vertical-align: middle;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
   .goods .menu-wrapper .menu-item .text .icon {
-    width: 15px;
-    height: 15px;
+    width: 0.68rem;
+    height: 0.68rem;
     vertical-align: middle;
   }
 
   /* 专场样式 */
   .goods .foods-wrapper .container-list {
-    padding: 11px 11px 0 11px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
     border-bottom: 1px solid #E4E4E4;
   }
 
   .goods .foods-wrapper .container-list img {
     width: 100%;
-    margin-bottom: 11px;
-    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    border-radius: 0.23rem;
   }
 
   /* 具体分类商品布局 */
   .goods .foods-wrapper .food-list {
-    padding: 11px;
+    padding: 0.5rem;
   }
 .food-container {
     margin-bottom:2rem;
 }
   .goods .foods-wrapper .food-list .title {
-    height: 13px;
-    font-size: 13px;
+    height: 0.6rem;
+    font-size: 0.6rem;
     background: url('./src/assets/images/btn_yellow_highlighted@2x.png') no-repeat left center;
-    background-size: 2px 10px;
-    padding-left: 7px;
-    margin-bottom: 12px;
+    background-size: 2px 0.45rem;
+    padding-left: 0.58rem;
+    margin-bottom: 0.545rem;
   }
 
   .goods .foods-wrapper .food-list .food-item {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 1.2rem;
     position: relative;
   }
 
   .goods .foods-wrapper .food-list .food-item .icon {
-    flex: 0 0 63px;
+    flex: 0 0 2.86rem;
     background-position: center;
     background-size: 120% 100%;
     background-repeat: no-repeat;
-    margin-right: 11px;
-    height: 75px;
+    margin-right: 0.5rem;
+    height: 3.6rem;
   }
   .goods .foods-wrapper .food-list .food-item .icon img {
         width:3rem;
@@ -117,16 +114,16 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
 
   /* 具体内容样式 */
   .goods .foods-wrapper .food-list .food-item .content .name {
-    font-size: 16px;
+    font-size: 0.72rem;
     line-height: 21px;
     color: #333333;
-    margin-bottom: 10px;
-    padding-right: 27px;
+    margin-bottom: 0.45rem;
+    padding-right: 1.22rem;
   }
 
   .goods .foods-wrapper .food-list .food-item .content .desc {
-    font-size: 10px;
-    line-height: 19px;
+    font-size: 0.45rem;
+    line-height: 0.86rem;
     color: #bfbfbf;
     margin-bottom: 8px;
 
@@ -138,18 +135,18 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
   }
 
   .goods .foods-wrapper .food-list .food-item .content .extra {
-    font-size: 10px;
+    font-size: 0.45rem;
     color: #BFBFBF;
-    margin-bottom: 7px;
+    margin-bottom: 0.58rem;
   }
 
   .goods .foods-wrapper .food-list .food-item .content .extra .saled {
-    margin-right: 14px;
+    margin-right: 0.63rem;
   }
 
   .goods .foods-wrapper .food-list .food-item .content .product {
-    height: 15px;
-    margin-bottom: 6px;
+    height: 0.68rem;
+    margin-bottom: 0.27rem;
   }
 
   .goods .foods-wrapper .food-list .food-item .content .price {
@@ -160,12 +157,12 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
   }
 
   .goods .foods-wrapper .food-list .food-item .content .price .text {
-    font-size: 14px;
+    font-size: 0.63rem;
     color: #fb4e44;
   }
 
   .goods .foods-wrapper .food-list .food-item .content .price .unit {
-    font-size: 12px;
+    font-size: 0.545rem;
     color: #BFBFBF;
   }
 
@@ -188,22 +185,22 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
 
   .goods .menu-wrapper .menu-item .num {
     position: absolute;
-    right: 5px;
-    top: 5px;
-    width: 13px;
-    height: 13px;
+    right: 0.23rem;
+    top: 0.23rem;
+    width: 0.6rem;
+    height: 0.6rem;
     border-radius: 50%;
     color: white;
     background: red;
     text-align: center;
-    font-size: 7px;
-    line-height: 13px;
+    font-size: 0.58rem;
+    line-height: 0.6rem;
   }
 
 
 
   .price-right {
-    font-size: 16px;
+    font-size: 0.72rem;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -228,11 +225,8 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
 }
 .price-right_num {
     width: 8vw;
-    display: -webkit-inline-flex;
     display: inline-flex;
-    -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: center;
     justify-content: center;
     font-size: 3.73333333vw;
     color: #222426;
@@ -262,7 +256,7 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
 
 .menu-item-icon.menu-item-iconv2 {
     width: 36px;
-    border-radius: 12px;
+    border-radius: 0.545rem;
 }
 .menu-item-icon {
     position: absolute;
@@ -270,7 +264,7 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
     right: 0px;
     color: #fff;
     background-color: #FB4E44;
-    font-size: 10px;
+    font-size: 0.45rem;
     width: 24px;
     height: 24px;
     font-size: 20px;
@@ -660,4 +654,4 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
     border-radius: 50%;
     text-align: center;
 }
-`;function I(i){const{cartNumber:c,clearCart:s,singleCart:d}=i,[p,w]=D.exports.useState(!1);let r=[],u=[];d.forEach((o,g)=>{g%2==0&&r.push(o)});for(let o=0;o<r.length;o++)u.includes(r[o].id)?(r.splice(o,1),o--):u.push(r[o].id);let m=r.reduce((o,g)=>o+g.praise_num*g.min_price,0);const f=()=>{w(!p)},v=()=>{s(),f(),document.querySelector(".cart-content-btn").classList.remove("cart-bg"),document.querySelector(".cart-content-ft").classList.remove("cart-bg-ft")};return t(q,{children:e("div",{className:"cart",id:"cart",children:[r.length>0&&p&&e("div",{children:[t("div",{className:"modal",children:t("div",{className:"modal-content",children:t("div",{children:t("div",{className:"modal-box",onClick:()=>f()})})})}),t("div",{children:e("div",{className:"cartDetail",children:[e("div",{className:"cartDetail-discount",children:[t("span",{className:"cartDetail-discount-desc",children:"\u6298\u6263\u5DF2\u51CF20\u5143"}),t("span",{className:"cartDetail-discount-box"})]}),e("div",{children:[e("div",{className:"cartDetail-title",children:[t("span",{className:"cartDetail-title-left",children:"\u8D2D\u7269\u8F66"}),t("span",{className:"cartDetail-title-right",onClick:()=>v(),children:"\u6E05\u7A7A\u8D2D\u7269\u8F66"})]}),e("div",{children:[r.map((o,g)=>t("div",{className:"cartDetail-content",style:{overflow:"hidden"},children:t("div",{children:e("div",{className:"cartDetail-content-v2",children:[t("img",{className:"cartDetail-content-pic",src:o.picture}),e("div",{className:"cartDetail-content-v3",children:[e("div",{className:"cartDetail-content-hd",children:[t("div",{className:"cartDetail-content-desc",children:o.name}),t("div",{className:"cartDetail-content-count",children:"(1\u4EBA\u4EFD)\u30011\u4EBA\u4EFD"})]}),e("div",{className:"cartDetail-content-bd",children:[t("span",{className:"cartDetail-content-icon",children:"\xA5"}),t("span",{className:"cartDetail-content-price",children:o.min_price*o.praise_num}),e("span",{className:"cartDetail-content-discount",children:["\xA5",45*o.praise_num]})]})]}),t("div",{className:"cartDetail-content-ft",children:e("div",{className:"cartDetail-content-ftv2 cartDetail-content-ftv3",children:[t("span",{className:"cartDetail-content-ftbox",children:t("span",{className:"cartDetail-content-ftboxv2"})}),t("span",{className:"cartDetail-ft-count",children:o.praise_num}),t("span",{className:"cartDetail-ft-box",children:t("span",{className:"cartDetail-content-ftboxv2"})})]})})]})})},o.id)),e("div",{className:"cartDetail-bundle",children:[t("span",{className:"cartDetail-bundle-name",children:"\u6253\u5305\u8D39"}),t("span",{className:"cartDetail-bundle-symbol",children:"\xA5"}),t("span",{className:"cartDetail-bundle-count",children:r.length*2})]})]})]})]})})]}),t("div",{className:"cart-title cart-title-v2",children:t("div",{children:"\u6EE132\u51CF20;\u6EE150\u51CF28;\u6EE169\u51CF30;\u6EE189\u51CF39"})}),e("div",{className:"cart-content",children:[t("div",{role:"button",className:x({"cart-bg":r.length>0},"cart-content-btn"),onClick:()=>f(),children:r.length>0&&t("div",{className:"cart-content-icon cart-content-iconv2",children:c()})}),e("div",{className:"cart-content-mid",children:[r.length>0&&e("div",{className:"cart-content-priceAll",children:[e("span",{className:"priceAll-left",children:[t("span",{className:"priceAll-left-icon",children:"\xA5"}),m]}),t("span",{className:"priceAll-left-right",children:"\xA558.79"})]}),e("div",{className:"cart-content-txt cart-content-txtv2",children:["\u9884\u4F30\u53E6\u9700\u914D\u9001\u8D39 \xA51.1",t("span",{className:"cart-content-price",children:"\xA54.6"})]})]}),t(_,{to:"/order",children:t("div",{className:x({"cart-bg-ft":r.length>0},"cart-content-ft"),children:r.length?"\u53BB\u7ED3\u7B97":"\xA520\u8D77\u9001"})})]})]})})}function P(i){const{goods:c,loading:s,price:d,singleCart:p}=i,{getGoodsListDispatch:w,changeGoodsNumDispatch:r,changeGoodsAllNumDispatch:u}=i;D.exports.useEffect(()=>{w()},[]);const m=(a,l,n)=>{a.preventDefault(),a.stopPropagation(),r({status:l,id:n})},f=a=>{if(a){let l=document.getElementById(a);l&&l.scrollIntoView({block:"start",behavior:"smooth"})}return!0},v=()=>{let a=0;return c.map(l=>{l.name!="\u70ED\u9500"&&l.spus.map(n=>{a+=n.praise_num})}),a},o=()=>{u()},g=()=>c.map((a,l)=>{let n=0;return a.spus.map(h=>{n+=h.praise_num}),t("li",{className:"menu-item",onClick:h=>{f(a.name)&&C()},children:e("div",{className:"text",children:[n>0&&t("div",{className:"menu-item-icon menu-item-iconv2",children:n}),t("img",{src:a.icon?a.icon:"",style:{width:"15px"}}),a.name]})},l)}),k=()=>c.map((a,l)=>e("li",{className:"food-list food-list-hook",id:a.name,children:[t("h3",{className:"title",children:a.name}),t("ul",{children:a.spus.map(n=>e("li",{className:"food-item",children:[t("div",{className:"icon",children:t("img",{src:n.picture,alt:""})}),e("div",{className:"content",children:[t("h3",{className:"name",children:n.name}),t("div",{className:"desc",children:n.description}),e("div",{className:"extra",children:[t("span",{className:"saled",children:n.month_saled_content}),t("span",{className:"praise",children:n.praise_content})]}),e("div",{className:"price",children:[e("div",{children:[e("span",{className:"text",children:["$",n.min_price]}),e("span",{className:"unit",children:["/",n.unit]})]}),e("div",{className:"price-right",children:[n.praise_num>0&&t("span",{className:"price-right_reduce",children:t("span",{className:"reduce-box",onClick:h=>m(h,"reduce",n.id)})}),t("span",{className:"price-right_num",children:n.praise_num?n.praise_num:""}),t("span",{className:"price-right_add",children:t("span",{className:"add-box",onClick:h=>m(h,"add",n.id)})})]})]})]})]},n.id))})]},l));return e(T,{children:[e("div",{className:"goods",children:[t("div",{className:"menu-wrapper",children:t("ul",{children:g()})}),t("div",{className:"foods-wrapper",children:t("ul",{className:"food-container",children:k()})})]}),t(I,{price:d,cartNumber:v,clearCart:o,singleCart:p}),s?t(H,{children:t(B,{})}):null]})}const V=i=>{let c=[];return i.goods.GoodsList.forEach(s=>{s.name!="\u70ED\u9500"&&s.spus.forEach(d=>{let p=0;p+=d.praise_num>0?d.min_price*d.praise_num:0,c.push(p)})}),{goods:i.goods.GoodsList,loading:i.goods.Loading,singleCart:i.goods.SingleCart,price:c.reduce((s,d)=>s+=d,0)}},M=i=>({getGoodsListDispatch(){i(O())},changeGoodsNumDispatch(c){i(j(c))},changeGoodsAllNumDispatch(c){i(S(c))}});var W=A(V,M)(P);export{W as default};
+`;function I(i){const{cartNumber:c,clearCart:s,singleCart:d}=i,[p,v]=D.exports.useState(!1);let r=[],f=[];d.forEach((o,g)=>{g%2==0&&r.push(o)});for(let o=0;o<r.length;o++)f.includes(r[o].id)?(r.splice(o,1),o--):f.push(r[o].id);let u=r.reduce((o,g)=>o+g.praise_num*g.min_price,0);const m=()=>{v(!p)},w=()=>{s(),m(),document.querySelector(".cart-content-btn").classList.remove("cart-bg"),document.querySelector(".cart-content-ft").classList.remove("cart-bg-ft")};return e(q,{children:t("div",{className:"cart",id:"cart",children:[r.length>0&&p&&t("div",{children:[e("div",{className:"modal",children:e("div",{className:"modal-content",children:e("div",{children:e("div",{className:"modal-box",onClick:()=>m()})})})}),e("div",{children:t("div",{className:"cartDetail",children:[t("div",{className:"cartDetail-discount",children:[e("span",{className:"cartDetail-discount-desc",children:"\u6298\u6263\u5DF2\u51CF20\u5143"}),e("span",{className:"cartDetail-discount-box"})]}),t("div",{children:[t("div",{className:"cartDetail-title",children:[e("span",{className:"cartDetail-title-left",children:"\u8D2D\u7269\u8F66"}),e("span",{className:"cartDetail-title-right",onClick:()=>w(),children:"\u6E05\u7A7A\u8D2D\u7269\u8F66"})]}),t("div",{children:[r.map((o,g)=>e("div",{className:"cartDetail-content",style:{overflow:"hidden"},children:e("div",{children:t("div",{className:"cartDetail-content-v2",children:[e("img",{className:"cartDetail-content-pic",src:o.picture}),t("div",{className:"cartDetail-content-v3",children:[t("div",{className:"cartDetail-content-hd",children:[e("div",{className:"cartDetail-content-desc",children:o.name}),e("div",{className:"cartDetail-content-count",children:"(1\u4EBA\u4EFD)\u30011\u4EBA\u4EFD"})]}),t("div",{className:"cartDetail-content-bd",children:[e("span",{className:"cartDetail-content-icon",children:"\xA5"}),e("span",{className:"cartDetail-content-price",children:o.min_price*o.praise_num}),t("span",{className:"cartDetail-content-discount",children:["\xA5",45*o.praise_num]})]})]}),e("div",{className:"cartDetail-content-ft",children:t("div",{className:"cartDetail-content-ftv2 cartDetail-content-ftv3",children:[e("span",{className:"cartDetail-content-ftbox",children:e("span",{className:"cartDetail-content-ftboxv2"})}),e("span",{className:"cartDetail-ft-count",children:o.praise_num}),e("span",{className:"cartDetail-ft-box",children:e("span",{className:"cartDetail-content-ftboxv2"})})]})})]})})},o.id)),t("div",{className:"cartDetail-bundle",children:[e("span",{className:"cartDetail-bundle-name",children:"\u6253\u5305\u8D39"}),e("span",{className:"cartDetail-bundle-symbol",children:"\xA5"}),e("span",{className:"cartDetail-bundle-count",children:r.length*2})]})]})]})]})})]}),e("div",{className:"cart-title cart-title-v2",children:e("div",{children:"\u6EE132\u51CF20;\u6EE150\u51CF28;\u6EE169\u51CF30;\u6EE189\u51CF39"})}),t("div",{className:"cart-content",children:[e("div",{role:"button",className:x({"cart-bg":r.length>0},"cart-content-btn"),onClick:()=>m(),children:r.length>0&&e("div",{className:"cart-content-icon cart-content-iconv2",children:c()})}),t("div",{className:"cart-content-mid",children:[r.length>0&&t("div",{className:"cart-content-priceAll",children:[t("span",{className:"priceAll-left",children:[e("span",{className:"priceAll-left-icon",children:"\xA5"}),u]}),e("span",{className:"priceAll-left-right",children:"\xA558.79"})]}),t("div",{className:"cart-content-txt cart-content-txtv2",children:["\u9884\u4F30\u53E6\u9700\u914D\u9001\u8D39 \xA51.1",e("span",{className:"cart-content-price",children:"\xA54.6"})]})]}),e(_,{to:"/order",children:e("div",{className:x({"cart-bg-ft":r.length>0},"cart-content-ft"),children:r.length?"\u53BB\u7ED3\u7B97":"\xA520\u8D77\u9001"})})]})]})})}function P(i){const{goods:c,loading:s,price:d,singleCart:p}=i,{getGoodsListDispatch:v,changeGoodsNumDispatch:r,changeGoodsAllNumDispatch:f}=i;D.exports.useEffect(()=>{v()},[]);const u=(a,l,n)=>{a.preventDefault(),a.stopPropagation(),r({status:l,id:n})},m=a=>{if(a){let l=document.getElementById(a);l&&l.scrollIntoView({block:"start",behavior:"smooth"})}return!0},w=()=>{let a=0;return c.map(l=>{l.name!="\u70ED\u9500"&&l.spus.map(n=>{a+=n.praise_num})}),a},o=()=>{f()},g=()=>c.map((a,l)=>{let n=0;return a.spus.map(h=>{n+=h.praise_num}),e("li",{className:"menu-item",onClick:h=>{m(a.name)&&C()},children:t("div",{className:"text",children:[n>0&&e("div",{className:"menu-item-icon menu-item-iconv2",children:n}),e("img",{src:a.icon?a.icon:"",style:{width:"15px"}}),a.name]})},l)}),N=()=>c.map((a,l)=>t("li",{className:"food-list food-list-hook",id:a.name,children:[e("h3",{className:"title",children:a.name}),e("ul",{children:a.spus.map(n=>t("li",{className:"food-item",children:[e("div",{className:"icon",children:e("img",{src:n.picture,alt:""})}),t("div",{className:"content",children:[e("h3",{className:"name",children:n.name}),e("div",{className:"desc",children:n.description}),t("div",{className:"extra",children:[e("span",{className:"saled",children:n.month_saled_content}),e("span",{className:"praise",children:n.praise_content})]}),t("div",{className:"price",children:[t("div",{children:[t("span",{className:"text",children:["$",n.min_price]}),t("span",{className:"unit",children:["/",n.unit]})]}),t("div",{className:"price-right",children:[n.praise_num>0&&e("span",{className:"price-right_reduce",children:e("span",{className:"reduce-box",onClick:h=>u(h,"reduce",n.id)})}),e("span",{className:"price-right_num",children:n.praise_num?n.praise_num:""}),e("span",{className:"price-right_add",children:e("span",{className:"add-box",onClick:h=>u(h,"add",n.id)})})]})]})]})]},n.id))})]},l));return t(T,{children:[t("div",{className:"goods",children:[e("div",{className:"menu-wrapper",children:e("ul",{children:g()})}),e("div",{className:"foods-wrapper",children:e("ul",{className:"food-container",children:N()})})]}),e(I,{price:d,cartNumber:w,clearCart:o,singleCart:p}),s?e(H,{children:e(B,{})}):null]})}const V=i=>{let c=[];return i.goods.GoodsList.forEach(s=>{s.name!="\u70ED\u9500"&&s.spus.forEach(d=>{let p=0;p+=d.praise_num>0?d.min_price*d.praise_num:0,c.push(p)})}),{goods:i.goods.GoodsList,loading:i.goods.Loading,singleCart:i.goods.SingleCart,price:c.reduce((s,d)=>s+=d,0)}},M=i=>({getGoodsListDispatch(){i(O())},changeGoodsNumDispatch(c){i(j(c))},changeGoodsAllNumDispatch(c){i(S(c))}});var W=A(V,M)(P);export{W as default};
