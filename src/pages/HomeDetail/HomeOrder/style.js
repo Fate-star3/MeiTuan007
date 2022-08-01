@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
 .goods {
     display: flex;
     position: absolute;
-    top: 280px;
+    top: 12.73rem;
     bottom: 0px;
     overflow: hidden;
     width: 100%;
@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
   }
 
   .goods .menu-wrapper {
-    flex: 0 0 85px;
+    flex: 0 0 3.86rem;
     background: #f4f4f4;
     /* overflow-y: overlay; */
   }
@@ -41,7 +41,7 @@ export const Wrapper = styled.div`
 
   .goods .menu-wrapper .menu-item {
     list-style-type: none;
-    padding: 16px 23px 15px 10px;
+    padding: 0.72rem 1.05rem 0.68rem 0.45rem;
     border-bottom: 1px solid #E4E4E4;
     position: relative;
   }
@@ -52,63 +52,60 @@ export const Wrapper = styled.div`
   }
 
   .goods .menu-wrapper .menu-item .text {
-    font-size: 13px;
+    font-size: 0.6rem;
     color: #333333;
-    line-height: 17px;
+    line-height: 0.77rem;
     vertical-align: middle;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
   .goods .menu-wrapper .menu-item .text .icon {
-    width: 15px;
-    height: 15px;
+    width: 0.68rem;
+    height: 0.68rem;
     vertical-align: middle;
   }
 
   /* 专场样式 */
   .goods .foods-wrapper .container-list {
-    padding: 11px 11px 0 11px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
     border-bottom: 1px solid #E4E4E4;
   }
 
   .goods .foods-wrapper .container-list img {
     width: 100%;
-    margin-bottom: 11px;
-    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    border-radius: 0.23rem;
   }
 
   /* 具体分类商品布局 */
   .goods .foods-wrapper .food-list {
-    padding: 11px;
+    padding: 0.5rem;
   }
 .food-container {
     margin-bottom:2rem;
 }
   .goods .foods-wrapper .food-list .title {
-    height: 13px;
-    font-size: 13px;
+    height: 0.6rem;
+    font-size: 0.6rem;
     background: url('./src/assets/images/btn_yellow_highlighted@2x.png') no-repeat left center;
-    background-size: 2px 10px;
-    padding-left: 7px;
-    margin-bottom: 12px;
+    background-size: 2px 0.45rem;
+    padding-left: 0.58rem;
+    margin-bottom: 0.545rem;
   }
 
   .goods .foods-wrapper .food-list .food-item {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 1.2rem;
     position: relative;
   }
 
   .goods .foods-wrapper .food-list .food-item .icon {
-    flex: 0 0 63px;
+    flex: 0 0 2.86rem;
     background-position: center;
     background-size: 120% 100%;
     background-repeat: no-repeat;
-    margin-right: 11px;
-    height: 75px;
+    margin-right: 0.5rem;
+    height: 3.6rem;
   }
   .goods .foods-wrapper .food-list .food-item .icon img {
         width:3rem;
@@ -120,16 +117,16 @@ export const Wrapper = styled.div`
 
   /* 具体内容样式 */
   .goods .foods-wrapper .food-list .food-item .content .name {
-    font-size: 16px;
+    font-size: 0.72rem;
     line-height: 21px;
     color: #333333;
-    margin-bottom: 10px;
-    padding-right: 27px;
+    margin-bottom: 0.45rem;
+    padding-right: 1.22rem;
   }
 
   .goods .foods-wrapper .food-list .food-item .content .desc {
-    font-size: 10px;
-    line-height: 19px;
+    font-size: 0.45rem;
+    line-height: 0.86rem;
     color: #bfbfbf;
     margin-bottom: 8px;
 
@@ -141,18 +138,18 @@ export const Wrapper = styled.div`
   }
 
   .goods .foods-wrapper .food-list .food-item .content .extra {
-    font-size: 10px;
+    font-size: 0.45rem;
     color: #BFBFBF;
-    margin-bottom: 7px;
+    margin-bottom: 0.58rem;
   }
 
   .goods .foods-wrapper .food-list .food-item .content .extra .saled {
-    margin-right: 14px;
+    margin-right: 0.63rem;
   }
 
   .goods .foods-wrapper .food-list .food-item .content .product {
-    height: 15px;
-    margin-bottom: 6px;
+    height: 0.68rem;
+    margin-bottom: 0.27rem;
   }
 
   .goods .foods-wrapper .food-list .food-item .content .price {
@@ -163,12 +160,12 @@ export const Wrapper = styled.div`
   }
 
   .goods .foods-wrapper .food-list .food-item .content .price .text {
-    font-size: 14px;
+    font-size: 0.63rem;
     color: #fb4e44;
   }
 
   .goods .foods-wrapper .food-list .food-item .content .price .unit {
-    font-size: 12px;
+    font-size: 0.545rem;
     color: #BFBFBF;
   }
 
@@ -191,22 +188,22 @@ export const Wrapper = styled.div`
 
   .goods .menu-wrapper .menu-item .num {
     position: absolute;
-    right: 5px;
-    top: 5px;
-    width: 13px;
-    height: 13px;
+    right: 0.23rem;
+    top: 0.23rem;
+    width: 0.6rem;
+    height: 0.6rem;
     border-radius: 50%;
     color: white;
     background: red;
     text-align: center;
-    font-size: 7px;
-    line-height: 13px;
+    font-size: 0.58rem;
+    line-height: 0.6rem;
   }
 
 
 
   .price-right {
-    font-size: 16px;
+    font-size: 0.72rem;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -231,11 +228,8 @@ export const Wrapper = styled.div`
 }
 .price-right_num {
     width: 8vw;
-    display: -webkit-inline-flex;
     display: inline-flex;
-    -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: center;
     justify-content: center;
     font-size: 3.73333333vw;
     color: #222426;
@@ -265,7 +259,7 @@ export const Wrapper = styled.div`
 
 .menu-item-icon.menu-item-iconv2 {
     width: 36px;
-    border-radius: 12px;
+    border-radius: 0.545rem;
 }
 .menu-item-icon {
     position: absolute;
@@ -273,7 +267,7 @@ export const Wrapper = styled.div`
     right: 0px;
     color: #fff;
     background-color: #FB4E44;
-    font-size: 10px;
+    font-size: 0.45rem;
     width: 24px;
     height: 24px;
     font-size: 20px;

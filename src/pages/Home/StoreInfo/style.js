@@ -14,19 +14,19 @@ export const EnterLoading = styled.div`
 
 export const Wrapper = styled.div`
         width:100%;
-        padding-top:1px;
-        padding-bottom: 60px; 
+        padding-top:0.045rem;
+        padding-bottom: 3rem; 
         /* overflow:auto; */
 
         .loadMore {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  border: 1px; 
-  border-style: solid;
-  border-color: red;
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2.27rem;
+            border: 0.045rem; 
+            border-style: solid;
+            border-color: red;
+        }
 .poilist-item{
     background-color: #FFFFFF;
     border-radius: .1rem;
@@ -34,8 +34,8 @@ export const Wrapper = styled.div`
     margin-bottom: .1rem;
     display: flex;
     flex-wrap: nowrap;
-    border: 1px solid #F2F1F0;
-    border-radius: 6px;
+    border: 0.045rem solid #F2F1F0;
+    border-radius: 0.27rem;
     overflow: visible;
     margin:0.5rem;
     &.poilist-item-gray{
@@ -48,9 +48,9 @@ export const Wrapper = styled.div`
         margin-right: .08rem;
         width: 5.05rem;
         height: 5.05rem;
-        border: 1px solid #F2F1F0;
+        border: 0.045rem solid #F2F1F0;
         box-sizing: border-box;
-        border-radius: 6px;
+        border-radius: 0.27rem;
         &-promotionpic{
             position: absolute;
             top: -0.05rem;
@@ -71,9 +71,9 @@ export const Wrapper = styled.div`
             width: 0.41rem;
             max-width: .5rem;
             font-size: 12px;
-            line-height: 18px;
-            padding: 0 2px;
-            border-radius: 2px;
+            line-height: 0.81rem;
+            padding: 0 0.1rem;
+            border-radius: 0.1rem;
           
         }
         &-pic{
@@ -81,13 +81,13 @@ export const Wrapper = styled.div`
             height: 100%;
             width: 100%;
             object-fit: cover;
-            border-radius: 6px;
+            border-radius: 0.4rem;
         }
         &-poitypepic{
             position: absolute;
-            top: -2px;
-            right: -2px;
-            height: 18px;
+            top: -0.09rem;
+            right: -0.09rem;
+            height: 0.81rem;
             .poitype-pic{
                 display: block;
                 height: 100%;
@@ -96,12 +96,12 @@ export const Wrapper = styled.div`
         }
         &-poitypetxt{
             position: absolute;
-            top: 2px;
-            right: -2px;
-            height: 18px;
-            line-height: 18px;
-            padding: 0 2px;
-            border-radius: 2px;
+            top: 0.09rem;
+            right: -0.09rem;
+            height: 0.81rem;
+            line-height: 0.81rem;
+            padding: 0 0.09rem;
+            border-radius: 0.09rem;
         
         }
     }
@@ -132,9 +132,9 @@ export const Wrapper = styled.div`
             max-width: 2.25rem;
             overflow: hidden;
             font-size: 12px;
-            line-height: 18px;
-            padding: 0 2px;
-            border-radius: 2px;
+            line-height: 0.81rem;
+            padding: 0 0.09rem;
+            border-radius: 0.09rem;
            
         }
         &name{
@@ -149,7 +149,7 @@ export const Wrapper = styled.div`
         &badgepic{
             flex-shrink: 0;
             height: 20px;
-            margin-top: -3px;
+            margin-top: -0.13rem;
             .info1badge-pic{
                 display: block;
                 height: 100%;
@@ -158,12 +158,12 @@ export const Wrapper = styled.div`
         }
         &badgetxt{
             flex-shrink: 0;
-            max-width: 2025rem;
+            max-width: 2.25rem;
             overflow: hidden;
             font-size: 12px;
             line-height: 18px;
-            padding: 0 2px;
-            border-radius: 2px;
+            padding: 0 0.09rem;
+            border-radius: 0.09rem;
            
         }
     }
@@ -184,7 +184,7 @@ export const Wrapper = styled.div`
             flex-wrap: nowrap;
             &.poilist-item-only-order{
                 .poi-info-txt{
-                    padding: 0 4px;
+                    padding: 0 0.18rem;
                     color: rgb(255, 128, 0);
                     background-color: rgb(255, 248, 225);
                 }
@@ -202,7 +202,7 @@ export const Wrapper = styled.div`
                     img {
                         height: .45rem;
                         width: .45rem;
-                        margin-left: 4px;
+                        margin-left: 0.18rem;
                     }
                 }
             }
@@ -213,11 +213,11 @@ export const Wrapper = styled.div`
             height: .8rem;
             .poi-info-deliverytag{
                 background: #FAFAFA;
-                border-radius: 4px;
+                border-radius: 0.18rem;
                 font-size: .55rem;
                 color: #FF8000;
                 line-height: .8rem;
-                padding: 0 4px;
+                padding: 0 0.18rem;
             }
         }
     }
@@ -243,7 +243,7 @@ export const Wrapper = styled.div`
                 margin-right: .3rem;
                 white-space: nowrap;
                 &.no-margin-right{
-                    margin-right: 2px;
+                    margin-right: 0.09rem;
                 }
                 &.through-line{
                     text-decoration: line-through;
@@ -277,11 +277,11 @@ export const Wrapper = styled.div`
         box-sizing: border-box;
         &item{
             height: 0.8rem;
-            margin: 0 4px 6px 0;
+            margin: 0 0.18rem 0.27rem 0;
             overflow: hidden;
             flex: none;
             max-width: 100%;
-            border-radius: 4px;
+            border-radius: 0.18rem;
             &pic{
                 max-width: 100%;
                 height: 0.8rem;
@@ -296,7 +296,7 @@ export const Wrapper = styled.div`
                 height: 0.8rem;
                 display: flex;
                 align-items: center;
-                border-radius: 2px;
+                border-radius: 0.09rem;
                 .info4-item-txtlefticon{
                     height: .8rem;
                 }
@@ -304,14 +304,14 @@ export const Wrapper = styled.div`
                     max-width: 100%;
                     overflow: hidden;
                     flex: none;
-                    padding: 0 2px;
+                    padding: 0 0.09rem;
                     line-height: .8rem;
                     font-size: .55rem;
                    
                 }
                 .info4-item-txtrighticon{
                     height: .6rem;
-                    border-radius: 4px;
+                    border-radius: 0.18rem;
                 }
             }
         }
@@ -328,7 +328,7 @@ export const Wrapper = styled.div`
             overflow: auto;
         }
         &.more-icon-need{
-            padding-right: 15px;
+            padding-right: 0.68rem;
         }
         &tag{
             flex: none;
@@ -337,14 +337,14 @@ export const Wrapper = styled.div`
             position: relative;
             max-height: .8rem;
             max-width: 10rem;
-            min-width: 5px;
-            margin: 2px 4px 4px 0;
+            min-width: 0.23rem;
+            margin: 0.09rem 0.18rem 0.18rem 0;
             display: flex;
             align-items: center;
             font-size: 0;
             &.tag-has-border{
-                @include util-border(1px, #FFC6C1, solid, 4px);
-                @include util-border(1px, currentColor, solid, 4px);
+                @include util-border(0.045rem, #FFC6C1, solid, 0.18rem);
+                @include util-border(0.045rem, currentColor, solid, 0.18rem);
             }
             .info5-subtagtxt{
                 flex: 1;
@@ -357,8 +357,8 @@ export const Wrapper = styled.div`
                 font-size: .55rem;
                 line-height: .8rem;
                 vertical-align: middle;
-                // margin: 0 4px;
-                padding: 0 4px;
+                // margin: 0 0.18rem;
+                padding: 0 0.18rem;
             }
             .subtag-txt-img{
                 display: block;
@@ -376,14 +376,14 @@ export const Wrapper = styled.div`
                 flex: none;
                 font-size: .55rem;
                 line-height: .8rem;
-                padding: 0 4px;
+                padding: 0 0.18rem;
             }
         }
         &arrow{
             position: absolute;
-            right: 3px;
-            top: 5px;
-            height: 10px;
+            right: 0.13rem;
+            top: 0.23rem;
+            height: 0.46rem;
             transition: all .2s;
             &.arrow-show{
                 transform: rotate(180deg);
@@ -394,12 +394,11 @@ export const Wrapper = styled.div`
  // 如果设计稿宽度为750, 可以用* @px代替px, 以自适应屏幕宽度
 
  .poilist-item-info5.more-icon-need {
-    padding-right: 15px;
+    padding-right: 0.68rem;
 }
 .d_cmm-label-comp-wrap {
     letter-spacing: 0;
     -webkit-text-size-adjust: none;
-    display: -webkit-flex;
     display: flex;
     overflow: hidden;
     box-sizing: border-box;
@@ -412,18 +411,15 @@ export const Wrapper = styled.div`
 }
 
 .d_cmm-label-comp-wrap .d_sublabel-container {
-    height: 4.53333333vw;
+    height: 0.85rem;
     display: flex;
     overflow: hidden;
     flex-direction: column;
 }
 .d_cmm-label-comp-wrap .d_sublabel-container {
-    height: 16px;
-    display: -webkit-flex;
+    height: 0.73rem;
     display: flex;
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-flex-direction: column;
     flex-direction: column;
 }
 .d_cmm-label-comp-wrap .d_sublabel-container .d_sublabel-block {
@@ -433,40 +429,38 @@ export const Wrapper = styled.div`
 .d_cmm-label-comp-wrap .d_sublabel-container .d_sublabel {
     flex: none;
     max-width: 100%;
-    font-size: 2.66666667vw;
+    font-size: 0.5rem;
     color: #fb4e44;
     border: 0.13333333vw solid transparent;
-    border-radius: 0.53333333vw;
-    margin-right: 1.6vw;
+    border-radius: 0.11rem;
+    margin-right: 0.3rem;
     display: flex;
     align-items: center;
-    margin-bottom: 0.93333333vw;
-    height: 4.26666667vw;
+    margin-bottom: 0.175rem;
+    height: 0.8rem;
     overflow: hidden;
 }
 
 .d_cmm-label-comp-wrap .d_sublabel-container .d_sublabel {
     -webkit-flex: 0 0 auto;
     flex: 0 0 auto;
-    font-size: 10px;
+    font-size: 0.46rem;
     color: #fb4e44;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    margin-right: 6px;
+    border: 0.045rem solid transparent;
+    border-radius: 0.09rem;
+    margin-right: 0.27rem;
     box-sizing: border-box;
-    display: -webkit-flex;
     display: flex;
-    -webkit-align-items: center;
     align-items: center;
-    margin-bottom: 3.5px;
+    margin-bottom: 3.0.23rem;
     .d_cmm-label-comp-wrap .d_sublabel-container .d_sublabel .d_lb-wrap {
-    height: 4.26666667vw;
+    height: 0.8rem;
     flex: auto;
 }
 .d_cmm-label-comp-wrap .d_sublabel-container .d_sublabel .d_lb-wrap {
-    height: 16px;
+    height: 0.73rem;
 }
-    height: 16px;
+    height: 0.73rem;
     overflow: hidden;
 }
 .d_cmm-label-comp-wrap .d_sublabel-container .d_sublabel .d_lb:first-child {
@@ -475,147 +469,19 @@ export const Wrapper = styled.div`
 .d_cmm-label-comp-wrap .d_sublabel-container .d_sublabel .d_lb {
     display: inline-block;
     color: #fb4e44;
-    padding: 0 0.93333333vw;
-    height: 4.26666667vw;
-    line-height: 4.26666667vw;
+    padding: 0 0.175rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
     position: relative;
     vertical-align: middle;
 }
 .d_cmm-label-comp-wrap .d_sublabel-container .d_sublabel .d_lb {
     display: inline-block;
     color: #fb4e44;
-    padding: 0 3.5px;
-    margin-bottom: 3.5px;
-    height: 16px;
-    line-height: 16px;
+    padding: 0 3.0.23rem;
+    margin-bottom: 3.0.23rem;
+    height: 0.73rem;
+    line-height: 0.73rem;
     position: relative;
 }
-/* .d_cmm-label-comp-wrap {
-    .d_sublabel-container {
-        height: 34 * (100vw / 750);
-        display: flex;
-        overflow: hidden;
-        flex-direction: column;
-        &.d_multi-line {
-            height: auto;
-        }
-        .d_sublabel-block {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .d_sublabel {
-            flex: none;
-            max-width: 100%;
-            font-size: 20 * (100vw / 750);
-            color: #fb4e44;
-            border: 1 * (100vw / 750) solid transparent;
-            border-radius: 4 * (100vw / 750);
-            margin-right: 12 * (100vw / 750);
-            display: flex;
-            align-items: center;
-            margin-bottom: 7 * (100vw / 750);
-            height: 32 * (100vw / 750);
-            overflow: hidden;
-
-            .d_lb-wrap {
-                height: 32 * (100vw / 750);
-                flex: auto;
-            }
-
-            .d_lb {
-                display: inline-block;
-                color: #fb4e44;
-                padding: 0 7 * (100vw / 750);
-                height: 32 * (100vw / 750);
-                line-height: 32 * (100vw / 750);
-                position: relative;
-                vertical-align: middle;
-            }
-
-            .d_line {
-                position: absolute;
-                left: 0;
-                top: 8 * (100vw / 750);
-                background: #FDC9C6;
-                width: 1 * (100vw / 750);
-                height: 16 * (100vw / 750);
-            }
-
-            .d_img-bg {
-                height: 32 * (100vw / 750);
-                display: inline-flex;
-                align-items: center;
-                background-color: #fff;
-                padding: 0 0 0 5 * (100vw / 750);
-                vertical-align: middle;
-
-                > img {
-                    height: 28 * (100vw / 750);
-                }
-            }
-
-            .d_mix-lb {
-                padding: 0 8 * (100vw / 750);
-                height: 32 * (100vw / 750);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-left: 1 * (100vw / 750) solid #FDC9C6;
-                background: #FFEFF4;
-                flex: none;
-            }
-        }
-        .d_whole-block-label {
-            flex: 1 1 auto;
-            font-size: 20 * (100vw / 750);
-            color: #fb4e44;
-            display: flex;
-            align-items: center;
-            margin-bottom: 7 * (100vw / 750);
-
-            .d_wholeblock-lb-wrap {
-                display: flex;
-                flex: auto;
-            }
-
-            .d_whole-line-lb {
-                display: inline-block;
-                color: #fb4e44;
-                padding: 0 7 * (100vw / 750);
-                margin-bottom: 7 * (100vw / 750);
-                line-height: 32 * (100vw / 750);
-                position: relative;
-            }
-
-            .d_line {
-                position: absolute;
-                left: 0;
-                top: 8 * (100vw / 750);
-                background: #FDC9C6;
-                width: 1 * (100vw / 750);
-                height: 16 * (100vw / 750);
-            }
-
-            .d_img-bg {
-                height: 32 * (100vw / 750);
-                display: inline-flex;
-                align-items: center;
-                background-color: #fff;
-                padding: 0 0 0 5 * (100vw / 750);
-                vertical-align: middle;
-            }
-
-            .d_mix-lb {
-                padding: 0 8 * (100vw / 750);
-                height: 32 * (100vw / 750);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-left: 1 * (100vw / 750) solid #FDC9C6;
-                background: #FFEFF4;
-                flex: none;
-            }
-        }
-    }
-} */
 `

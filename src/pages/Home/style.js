@@ -20,23 +20,23 @@ export const Wrapper = styled.div`
             }
            .search {
                 flex: none;
-                margin: 1.6vw 0px 2.13333333vw 0px;
+                margin: 0.3rem 0px 0.4rem 0px;
                 position: relative;
                 background: #fff;
-                border-radius: 100px;
-                height: 9.06666667vw;
+                border-radius: 4.54rem;
+                height: 1.7rem;
                 input {
                      width: 100%;
                      position: relative;
                      border: none;
                      height: 100%;
-                     padding-left: 30px;
+                     padding-left: 1.36rem;
                      box-sizing: border-box;
-                     border-radius: 100px;
+                     border-radius: 4.54rem;
                      overflow: hidden;
                      text-overflow: ellipsis;
-                     padding-right: 30px;
-                     font-size: 3.2vw;
+                     padding-right: 1.36rem;
+                     font-size: 0.06rem;
                      color: #858687;
                      opacity: 1;
                      display: flex;
@@ -61,9 +61,9 @@ export const Wrapper = styled.div`
                          background: url('https://s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:9096d347/4601f5ad6630220c49ad11362304e2d1.png');
                          background-repeat: no-repeat;
                          background-size: contain;
-                         width: 3.2vw;
-                         height: 3.2vw;
-                         margin: 0 5px 0 11px;
+                         width: 0.06rem;
+                         height: 0.06rem;
+                         margin: 0 0.23rem 0 0.5rem;
                          position: absolute;
                          left: 0;
                          top: 50%;

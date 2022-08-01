@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const FooterWrapper = styled.div`
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 2.27rem;
     background-color:#fafafa;
     position: fixed;
     bottom: 0;
@@ -41,9 +41,9 @@ export const FooterWrapper = styled.div`
             font-size: 1rem;
         }
         .icon_home {
-            width: 30px;
-            height: 30px;
-            margin-top: 2px;
+            width: 1.36rem;
+            height: 1.36rem;
+            margin-top: 0.09rem;
             display: inline-block;
             background-repeat: no-repeat;
             background-position: center;
@@ -51,17 +51,17 @@ export const FooterWrapper = styled.div`
             background-size: contain;
         }
         .footer_home {
-            margin-bottom: 3px;
-            font-size: 12px;
-            line-height: 14px;
-            width: 30px;
+            margin-bottom: 0.13rem;
+            font-size: 0.54rem;
+            line-height: 0.63rem;
+            width: 1.36rem;
             text-align: center;
             display: inline-block;
         }
         .icon_member {
-            width: 30px;
-            height: 30px;
-            margin-top: 2px;
+            width: 1.36rem;
+            height: 1.36rem;
+            margin-top: 0.09rem;
             display: inline-block;
             background-repeat: no-repeat;
             background-position: center;
@@ -69,17 +69,17 @@ export const FooterWrapper = styled.div`
             background-size: contain;
         }
         .footer_member {
-            margin-bottom: 3px;
-            font-size: 12px;
-            line-height: 14px;
-            width: 30px;
+            margin-bottom: 0.13rem;
+            font-size: 0.54rem;
+            line-height: 0.63rem;
+            width: 1.36rem;
             text-align: center;
             display: inline-block;
         }
         .icon_order {
-            width: 30px;
-            height: 30px;
-            margin-top: 2px;
+            width: 1.36rem;
+            height: 1.36rem;
+            margin-top: 0.09rem;
             display: inline-block;
             background-repeat: no-repeat;
             background-position: center;
@@ -89,18 +89,18 @@ export const FooterWrapper = styled.div`
 
         }
         .footer_order {
-            margin-bottom: 3px;
-            font-size: 12px;
-            line-height: 14px;
-            width: 30px;
+            margin-bottom: 0.13rem;
+            font-size: 0.54rem;
+            line-height: 0.63rem;
+            width: 1.36rem;
             text-align: center;
             display: inline-block;
 
         }
         .icon_mine {
-            width: 30px;
-            height: 30px;
-            margin-top: 2px;
+            width: 1.36rem;
+            height: 1.36rem;
+            margin-top: 0.09rem;
             display: inline-block;
             background-repeat: no-repeat;
             background-position: center;
@@ -108,10 +108,10 @@ export const FooterWrapper = styled.div`
             background-size: contain;
          }
         .footer_mine {
-            margin-bottom: 3px;
-            font-size: 12px;
-            line-height: 14px;
-            width: 30px;
+            margin-bottom: 0.13rem;
+            font-size: 0.54rem;
+            line-height: 0.63rem;
+            width: 1.36rem;
             text-align: center;
             display: inline-block;
 

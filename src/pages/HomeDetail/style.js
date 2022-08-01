@@ -30,7 +30,7 @@ export const Wrapper = styled.div`
 }
 
 .order-container-back {
-    height: 50px;
+    height: 2.27rem;
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
@@ -39,8 +39,8 @@ export const Wrapper = styled.div`
 }
 
 .order-container-back .order-container-backIcon {
-    width: 40px;
-    height: 50px;
+    width: 1.81rem;
+    height: 2.27rem;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAASCAYAAAEVsH/dAAAABGdBTUEAALGPC/xhBQAAAMJJREFUKBXFkrEOwjAMRFMkFujKB1Ti+5GYGahA/AMDS6X+AywovEu5BApCMGHpYvt8dtMkIcZYBRvJJbBsTIw9tT5zJDEnKYBoM0Oyq1hqmIWmNtasSMqY3EBAoX0pQtRA1khRErdCThzbi7hSWJpIHmIGZN8X5kNDnOZREHvQ/UBISssxtziA3IITeN6SBfYItHcdkKwH/2zg87qJA5CdQTkg7RlCAh2UrAPDE3j4oc+C+5R16n83wZPsEZbXbHLkbwE+Cry82MV2AAAAAElFTkSuQmCC) no-repeat;
     background-size: 2vw 4vw;
     background-position: bottom 3.6vw right 4.26666667vw;
@@ -56,22 +56,21 @@ export const Wrapper = styled.div`
     left: 0;
     top: 0;
     background: inherit;
-    -webkit-filter: blur(3px);
     filter: blur(3px);
 }
 
 .order-container-pic {
     position: absolute;
-    right: 16px;
-    top: 8px;
-    width: 30px;
-    height: 30px;
+    right: 0.72rem;
+    top: 0.36rem;
+    width: 1.36rem;
+    height: 1.36rem;
     z-index: 9;
 }
 
 .order-container-pic .order-container-picv2 {
-    width: 30px;
-    height: 30px;
+    width: 1.36rem;
+    height: 1.36rem;
 }
 
 .order-content {

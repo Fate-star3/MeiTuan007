@@ -6,14 +6,14 @@ export const Wraper = styled.div`
     background-color: #fff;
     background-image: linear-gradient(180deg, #fff, #F5F5F6 78%);
     height: 9rem;
-    border-radius:10px 10px 0 0;
+    border-radius:0.45rem 0.45rem 0 0;
 
 .btn_banners{
     width:100%;
     height:50vw;
     background:#fff;
-    border-radius:10px;
-    border-radius:10px 10px 0 0;
+    border-radius:0.45rem;
+    border-radius:0.45rem 0.45rem 0 0;
 }
 .swiper-slide{
     display: flex;
@@ -33,7 +33,7 @@ export const Wraper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top:5vw;
+    margin-top:0.94rem;
     span {
         display:inline-block;
         padding-top: 0.5rem;
@@ -42,9 +42,9 @@ export const Wraper = styled.div`
     
 }
 .swiper-item div p{
-    height:10vw;
-    width:10vw;
-    margin-bottom:1vw;
+    height:1.88rem;
+    width:1.88rem;
+    margin-bottom:0.19rem;
 
   
 }

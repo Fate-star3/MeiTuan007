@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
     .seller {
     position: absolute;
     left: 0;
-    top: 290px;
+    top: 13.2rem;
     bottom: 0px;
     width: 100%;
     background: #F4F4F4;
@@ -16,42 +16,42 @@ export const Wrapper = styled.div`
   }
 
   .seller .seller-wrapper .seller-view {
-    padding-left: 15px;
+    padding-left: 0.681rem;
   }
 
   .seller .seller-wrapper .seller-view .address-wrapper {
     display: flex;
-    padding: 16px 0;
-    border-bottom: 1px solid #F4F4F4;
+    padding: 0.727rem 0;
+    border-bottom: 0.09rem solid #F4F4F4;
   }
 
   .seller .seller-wrapper .seller-view .address-wrapper .address-left {
     flex: 1;
-    background: url('./src/assets/images/seller/address.png') no-repeat left center;
-    padding-left: 26px;
-    padding-right: 31px;
-    background-size: 14px 16px;
-    font-size: 14px;
-    line-height: 19px;
+    background: url('/src/assets/images/seller/address.png') no-repeat left center;
+    padding-left: 1.2rem;
+    padding-right: 1.41rem;
+    background-size: 0.636rem 0.727rem;
+    font-size: 0.636rem;
+    line-height: 0.86rem;
   }
 
   .seller .seller-wrapper .seller-view .address-wrapper .address-right {
     flex: 0 0 60px;
-    background: url('./src/assets/images/seller/line.png') no-repeat left center;
-    background-size: 1px 15px;
+    background: url('/src/assets/images/seller/line.png') no-repeat left center;
+    background-size: 0.09rem 0.681rem;
   }
 
   .seller .seller-wrapper .seller-view .address-wrapper .address-right .content {
     width: 100%;
     height: 100%;
-    background: url('./src/assets/images/seller/phone.png') no-repeat center center;
-    background-size: 18px 18px;
+    background: url('/src/assets/images/seller/phone.png') no-repeat center center;
+    background-size: 0.81rem 0.81rem;
   }
 
   .seller .seller-wrapper .seller-view .pics-wrapper {
-    padding: 10px 0;
+    padding: 0.454rem 0;
     overflow: hidden;
-    border-bottom: 1px solid #F4F4F4;
+    border-bottom: 0.09rem solid #F4F4F4;
     white-space: nowrap;
   }
 
@@ -60,75 +60,75 @@ export const Wrapper = styled.div`
 
   .seller .seller-wrapper .seller-view .pics-wrapper .pics-list .pics-item {
     display: inline-block;
-    margin-right: 11px;
-    width: 93px;
-    height: 75px;
+    margin-right: 0.5rem;
+    width: 4.22rem;
+    height: 3.4rem;
   }
 
   .seller .seller-wrapper .seller-view .pics-wrapper .pics-list .pics-item img {
     width: 100%;
     height: 100%;
-    border-radius: 2px;
+    border-radius: 0.07rem;
   }
 
   .seller .seller-wrapper .seller-view .safety-wrapper {
-    padding: 15px 14px 15px 25px;
-    background: url('./src/assets/images/seller/safety.png') no-repeat left center;
-    background-size: 14px 16px;
-    font-size: 14px;
+    padding: 0.681rem 0.636rem 0.681rem 1.136rem;
+    background: url('/src/assets/images/seller/safety.png') no-repeat left center;
+    background-size: 0.636rem 0.727rem;
+    font-size: 0.636rem;
   }
 
   .seller .seller-wrapper .seller-view .safety-wrapper span {
     float: right;
-    font-size: 14px;
+    font-size: 0.636rem;
   }
 
   .seller .seller-wrapper .tip-wrapper {
-    padding-left: 15px;
+    padding-left: 0.681rem;
   }
 
   .seller .seller-wrapper .tip-wrapper .delivery-wrapper {
-    background: url('./src/assets/images/seller/delivery.png') no-repeat left center;
-    background-size: 14px 16px;
-    padding: 15px 0 15px 25px;
-    font-size: 14px;
-    border-bottom: 1px solid #F4F4F4;
+    background: url('/src/assets/images/seller/delivery.png') no-repeat left center;
+    background-size: 0.636rem 0.727rem;
+    padding: 0.681rem 0 0.681rem 1.136rem;
+    font-size: 0.636rem;
+    border-bottom: 0.09rem solid #F4F4F4;
   }
 
   .seller .seller-wrapper .tip-wrapper .shipping-wrapper {
-    background: url('./src/assets/images/seller/time.png') no-repeat left center;
-    padding: 15px 17px 15px 25px;
-    background-size: 15px 15px;
-    font-size: 14px;
-    line-height: 18px;
+    background: url('/src/assets/images/seller/time.png') no-repeat left center;
+    padding: 0.681rem 0.77rem 0.681rem 1.136rem;
+    background-size: 0.681rem 0.681rem;
+    font-size: 0.636rem;
+    line-height: 0.81rem;
   }
 
   .seller .seller-wrapper .other-wrapper {
-    padding-left: 15px;
+    padding-left: 0.681rem;
   }
 
   .seller .seller-wrapper .other-wrapper .server-wrapper {
-    background: url('./src/assets/images/seller/server.png') no-repeat left center;
-    background-size: 15px 15px;
-    padding: 15px 0 17px 25px;
-    font-size: 14px;
-    border-bottom: 1px solid #F4F4F4;
+    background: url('/src/assets/images/seller/server.png') no-repeat left center;
+    background-size: 0.681rem 0.681rem;
+    padding: 0.681rem 0 0.77rem 1.136rem;
+    font-size: 0.636rem;
+    border-bottom: 0.09rem solid #F4F4F4;
   }
 
   .seller .seller-wrapper .other-wrapper .server-wrapper .poi-server {
     display: inline-block;
-    margin-left: 17px;
+    margin-left: 0.77rem;
   }
 
   .seller .seller-wrapper .other-wrapper .server-wrapper .poi-server img {
-    width: 15px;
-    height: 15px;
+    width: 0.681rem;
+    height: 0.681rem;
     margin-right: 6px;
     vertical-align: middle;
   }
 
   .seller .seller-wrapper .other-wrapper .discounts-wrapper {
-    padding: 17px 24px 19px 0;
+    padding: 0.77rem 24px 0.86rem 0;
   }
 
   .seller .seller-wrapper .other-wrapper .discounts-wrapper .discounts-item {
@@ -136,17 +136,17 @@ export const Wrapper = styled.div`
   }
 
   .seller .seller-wrapper .other-wrapper .discounts-wrapper .discounts-item .icon {
-    flex: 0 0 25px;
+    flex: 0 0 1.136rem;
   }
 
   .seller .seller-wrapper .other-wrapper .discounts-wrapper .discounts-item .icon img {
-    width: 15px;
-    height: 15px;
+    width: 0.681rem;
+    height: 0.681rem;
   }
 
   .seller .seller-wrapper .other-wrapper .discounts-wrapper .discounts-item .text {
     flex: 1;
-    font-size: 14px;
+    font-size: 0.636rem;
   }
 
 `

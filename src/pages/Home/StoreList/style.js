@@ -4,15 +4,15 @@ export const Wrapper = styled.div`
         height:3.5rem;
         color: #333;
         .kk-filter-wrapper {
-            padding-top: 10px;
+            padding-top: 0.45rem;
 
             .com-filter .filter-wrapper {
                 padding: 0 0.12rem;
             }
                 .m-filter-out {
-                     height: 28px;
+                     height: 1.27rem;
                      overflow: hidden;
-                     padding: 0 7px 0 8px;
+                     padding: 0 0.31rem 0 0.36rem;
                 }
                 .m-filter-out .out-wrapper {
                      display: flex;
@@ -33,18 +33,14 @@ export const Wrapper = styled.div`
                     .m-filter-out .out-item-info {
                         overflow: hidden;
                         display: flex;
-                        -webkit-align-items: center;
                         align-items: center;
                     }
                     .m-filter-out .out-item-center {
-                         -webkit-flex: none;
                          flex: none;
                          width: 50%;
                          overflow: hidden;
                          display: flex;
-                         -webkit-flex-direction: row-reverse;
                          flex-direction: row-reverse;
-                         -webkit-align-items: center;
                          align-items: center;
                     }
                     .m-filter-out .out-item-right {
@@ -55,30 +51,27 @@ export const Wrapper = styled.div`
                         margin-left: -1rem;
                         }
                         .m-filter-out .out-item-right .out-item-info {
-                            -webkit-flex-direction: row-reverse;
                             flex-direction: row-reverse;
                         }
                         .m-filter-out .out-item-info {
                             overflow: hidden;
                             display: flex;
-                            -webkit-align-items: center;
                             align-items: center;
                         }
                         .m-filter-out .out-item-info-titarrow {
-                         margin-left: 4px;
-                         -webkit-flex: none;
+                         margin-left: 0.18rem;
                          flex: none;
-                         height: 6px;
-                         width: 7px;
+                         height: 0.27rem;
+                         width: 0.31rem;
                          transition: all .2s;
                         }
                         .m-filter-out .out-item-info-tit {
                             -webkit-flex-shrink: 1;
                             flex-shrink: 1;
-                            font-size: 12px;
+                            font-size: 0.54rem;
                             color: #222426;
                             text-align: center;
-                            line-height: 28px;
+                            line-height: 1.27rem;
                             font-weight: 600;
                         
                         }
@@ -90,7 +83,7 @@ export const Wrapper = styled.div`
                     .m-filter-quick {
                         height: 37px;
                         overflow: hidden;
-                        padding: 4px 0 6px 0;
+                        padding: 0.18rem 0 0.27rem 0;
                         box-sizing: border-box;
                         position: relative;
                     }
@@ -102,15 +95,14 @@ export const Wrapper = styled.div`
                         /* overflow-x: scroll; */
                     }
                     .m-filter-quick .quick-item {
-                     height: 31px;
+                     height: 1.4rem;
                     }
                     .m-filter-quick .quick-item-hidebar {
-                        width: 82px;
-                        height: 27px;
-                        border-radius: 6px;
+                        width: 3.27rem;
+                        height: 1.1rem;
+                        border-radius: 0.27rem;
                         overflow: hidden;
                         display: flex;
-                        -webkit-align-items: center;
                         align-items: center;
                         background-color: #fff;
                         position: relative;
@@ -118,22 +110,15 @@ export const Wrapper = styled.div`
 .m-filter-quick .quick-item-tit {
     overflow: hidden;
     display: flex;
-    -webkit-align-items: center;
     align-items: center;
-    -webkit-flex: 1;
     flex: 1;
-    -webkit-justify-content: center;
     justify-content: center;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    padding: 0 4px;
+    padding: 0 0.18rem;
     box-sizing: border-box;
 }
 .m-filter-quick .quick-item-tittxt {
-    -webkit-flex-shrink: 1;
     flex-shrink: 1;
-    font-size: 12px;
+    font-size: 0.54rem;
     color: #575859;
     line-height: 27px;
     text-align: center;
@@ -148,15 +133,15 @@ export const Wrapper = styled.div`
 
 
         .back_top{
-            width:50px;
-            height: 50px;
+            width:2.27rem;
+            height: 2.27rem;
             position: fixed;
-            bottom: 60px;
-            right: 10px;
+            bottom: 2.72rem;
+            right: 0.45rem;
             border-radius: 50%;
-            line-height: 50px;
+            line-height: 2.27rem;
             text-align: center;
-            font-size: 26px;
+            font-size: 1.2rem;
             z-index:999;
             background-color: #eee;
         }
@@ -171,9 +156,9 @@ export const Wrapper = styled.div`
             background-color: #fff;
             .quick-item-tittxt {
                 background-color: #f5f5f6;
-                width: 82px;
-                height: 27px;
-                border-radius: 6px;
+                width: 3.27rem;
+                height: 1.33rem;
+                border-radius: 0.27rem;
             }
         }
 `
