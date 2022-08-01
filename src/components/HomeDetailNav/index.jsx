@@ -29,13 +29,13 @@ export default function HomeDetailNav({ id }) {
                             )
                         })
                     }
-                    <div id="menuSearch" className="_2eXeTl_BESb4iT-0WlHcaG" style={{width:"57px"}}>
+                    <div id="menuSearch" className="navbar-searchbox" style={{width:"57px"}}>
                         <input type="search" name="" id="" />
-                        <div className="hPfx1lboARt57b7-TmUkf">
-                            <div className="_2TpbiU8xb0dZksC63RzV_R">
+                        <div className="searchbox-content">
+                            <div className="searchbox-content-icon">
                             </div>
-                            <div className="_14y9Nh9BIFkJnO0qrwNtcU" id="menuSearchText" style={{ display: "block" }}>搜索</div>
-                            <div className="RfVKwPPkC35EzrFFx8Waz" id="menuSearchTextExpand" style={{ display: "none" }}>请输入菜品名称</div>
+                            <div className="searchbox-content-search" id="menuSearchText" style={{ display: "block" }}>搜索</div>
+                            <div className="searchbox-content-desc" id="menuSearchTextExpand" style={{ display: "none" }}>请输入菜品名称</div>
                         </div>
                     </div>
                 </div>

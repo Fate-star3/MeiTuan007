@@ -1,16 +1,10 @@
 import RoutesConfig from './routes'
-
-import { useState, useEffect,Suspense } from 'react'
-
-
-// 组件
+import { Suspense } from 'react'
+// 全局组件
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-
-
 function App() {
-
   return (
     <div className="App">
       <Header />

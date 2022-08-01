@@ -11,6 +11,7 @@ import LazyLoad, { forceCheck } from 'react-lazyload'
 import Loading from '@/components/common/loading'
 import { getCommentsList, getNavList } from './store/actionCreators'
 
+
 function HomeComment(props) {
 
   const { comments, navList, loading } = props
@@ -75,7 +76,7 @@ function HomeComment(props) {
   }
   return (
     <Wrapper>
-      <Scroll onScroll = {forceCheck}>
+     
       <div className="rating">
         <div className="rating-left">
           <div className="rating-left-hd">4.5</div>
@@ -186,7 +187,7 @@ function HomeComment(props) {
             <Loading></Loading>
           </EnterLoading> : null
       }
-      </Scroll>
+  
     </Wrapper>
   )
 }

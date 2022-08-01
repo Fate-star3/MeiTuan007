@@ -185,8 +185,6 @@ const mapStateToProps = (state) => {
       })
     }
   })
-
-
   return {
     goods: state.goods.GoodsList,
     loading: state.goods.Loading,

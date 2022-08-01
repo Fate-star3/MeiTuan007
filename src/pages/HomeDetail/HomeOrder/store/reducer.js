@@ -1,4 +1,3 @@
-import { object } from 'prop-types'
 import * as actionTypes from './constants.js'
 
 const defaulState = {
@@ -14,10 +13,10 @@ export default (state = defaulState, action) => {
     let changeList = []
     switch (action.type) {
         case actionTypes.CHANGE_GOODS_LIST:
+            console.log(state,action);
             return {
                 ...state,
                 GoodsList: action.data,
-
             }
         case actionTypes.GET_LOADING:
             return {
@@ -34,19 +33,16 @@ export default (state = defaulState, action) => {
                 item.map((item) => {
                     if (item.id == action.data.id) {
                         if (action.data.status == 'add') {
-                            item.praise_num++ 
+                            item.praise_num++
                             state.SingleCart.push(item)
-                        }else {
+                        } else {
                             item.praise_num--
                             state.SingleCart.pop()
 
-                        }                 
-                            
-                        // console.log(item);
+                        }
                     }
                 })
             })
-
             return Object.assign({}, state, { GoodsList: [...val] })
         case actionTypes.CHNAGE_GOODSAll_NUM:
 
@@ -58,7 +54,7 @@ export default (state = defaulState, action) => {
                     item.praise_num = 0
                 })
             })
-            state.SingleCart=[]
+            state.SingleCart = []
             return Object.assign({}, state, { GoodsList: [...val] })
         default:
             return state

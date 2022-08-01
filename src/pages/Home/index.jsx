@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { connect } from 'react-redux'
 import { Wrapper } from './style'
-import 'weui';
-import 'react-weui/build/packages/react-weui.css';
-import WEUI from 'react-weui'
 import { useSearchParams, useNavigate } from 'react-router-dom';
 // 组件
 import SetMeal from './SetMeal';
@@ -21,20 +18,15 @@ function Home(props) {
   const { getRestaurantsListDispatch, getBannersListDispatch } = props
   const navigate = useNavigate()
   const [visible, setVisible] = useState(false)
-  const { SearchBar } = WEUI
   const [search] = useSearchParams()
   const cityName = search.get('name') || ''
   const containerRef = useRef()
-  
+
   useEffect(() => {
     getBannersListDispatch()
     getRestaurantsListDispatch()
-
     isFixed('.container', 1)
     backGroundColor('.container')
-    document.querySelector('.search').addEventListener('click', function () {
-      navigate('/search')
-    })
     document.querySelector('.w').classList.add('failScroll')
   }, [])
 
@@ -46,16 +38,14 @@ function Home(props) {
   }
 
   return (
-
     <Wrapper className='w'>
       <div className='container' ref={containerRef}>
         <div className="wraper" >
           <CitySelect cityName={cityName} className='city' />
-          <SearchBar
-            placeholder="请输入商家或者商品名称"
-            lang={{ cancel: '取消' }}
-            className='search'
-          />
+          <div className="search seacrhv2">
+            <input placeholder="请输入商家或商品名称"/>
+              <div className="search-right" onClick={() => navigate('/search')}>搜索</div>
+          </div>
         </div>
       </div>
       <Banners banners={banners} />

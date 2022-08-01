@@ -7,11 +7,8 @@ export const isFixed = (str, height) => {
          box.classList.add('fixed')
       } else {
          box.classList.remove('fixed')
-
       }
-
    }
-
    window.addEventListener('scroll', fn)
 
 }
@@ -31,7 +28,7 @@ export const debounce = (func, delay) => {
 // 背景颜色的变化随时间变化
 export const backGroundColor = (str) => {
    let box = document.querySelector(str)
-   let timeout = new Date().getHours()
+   let timeout = new Date().getHours() 
    if (timeout >= 18) {
       box.classList.add('bgColor')
       document.querySelector('.next').classList.remove('icon_city-next')

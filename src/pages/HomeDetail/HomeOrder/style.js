@@ -90,7 +90,7 @@ export const Wrapper = styled.div`
   .goods .foods-wrapper .food-list .title {
     height: 13px;
     font-size: 13px;
-    background: url('/src/assets/images/btn_yellow_highlighted@2x.png') no-repeat left center;
+    background: url('./src/assets/images/btn_yellow_highlighted@2x.png') no-repeat left center;
     background-size: 2px 10px;
     padding-left: 7px;
     margin-bottom: 12px;

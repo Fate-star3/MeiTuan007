@@ -1,5 +1,5 @@
 /**
- * @author  文长
+ * @author  张三
  * @func 根据path 判断是否在数组配置中
  * @params {path string}
  * @return boolean 

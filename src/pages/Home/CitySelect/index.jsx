@@ -8,7 +8,6 @@ export default function CitySelect(props) {
 
 cityName =='' && window.sessionStorage.getItem("cityName") ? cityName = window.sessionStorage.getItem("cityName") : (window.sessionStorage.cityName = cityName)
 
-
   return (
     <Wrapper>
       <Link

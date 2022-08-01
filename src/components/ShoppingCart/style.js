@@ -9,10 +9,6 @@ export const Wrapper = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    bottom: constant(safe-area-inset-bottom);
-    bottom: env(safe-area-inset-bottom);
-    left: constant(safe-area-inset-left);
-    right: env(safe-area-inset-right);
 }
 .cart-title-v2 {
     position: absolute;
@@ -144,7 +140,6 @@ export const Wrapper = styled.div`
     height: 10.8vw;
     box-sizing: border-box;
     padding: 3.2vw 4.26666667vw;
-    display: -webkit-flex;
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;

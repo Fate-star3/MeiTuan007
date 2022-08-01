@@ -49,11 +49,8 @@ export default function index(props) {
                             <div className="out-wrapper">
                                 <div className="out-item-left">
                                     <div className="out-item-info" onClick={() => modal()}>
-
                                         <div className="out-item-info-tit">综合排序</div>
                                         <img className="out-item-info-titarrow" src="https://p0.meituan.net/travelcube/c031c9628ddd446e8c7635535297acda228.png" />
-
-
                                     </div>
                                 </div>
                                 <div className="out-item-center"></div>

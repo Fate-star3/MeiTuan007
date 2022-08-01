@@ -137,7 +137,7 @@ function ShoppingCart(props) {
                             <span className="cart-content-price">¥4.6</span>
                         </div>
                     </div>
-                    <Link to='/mine'>
+                    <Link to='/order'>
                         <div className={classnames({ "cart-bg-ft": list.length > 0 }, "cart-content-ft")}>{list.length ? '去结算' : '¥20起送'}</div>
                     </Link>
                 </div>

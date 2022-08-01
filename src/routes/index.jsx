@@ -1,5 +1,5 @@
 // 独立配置文件 
-import { useState, lazy} from 'react'
+import { lazy} from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import Home from '@/pages/Home'
 const Order = lazy(() => import('@/pages/Order'))
@@ -11,7 +11,6 @@ const HomeDetail = lazy(() => import('@/pages/HomeDetail'))
 const HomeOrder = lazy(() => import('@/pages/HomeDetail/HomeOrder'))
 const HomeComment = lazy(() => import('@/pages/HomeDetail/HomeComment'))
 const HomeBusiness = lazy(() => import('@/pages/HomeDetail/HomeBusiness'))
-
 
 // Routes 不能和react-router-dom 一样
 // 使用lazy动态加载组件时候报错如下

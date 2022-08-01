@@ -8,6 +8,7 @@ import BScroll from 'better-scroll'
 import LazyLoad from 'react-lazyload'
 import { forceCheck } from 'react-lazyload'
 import Loading from '@/components/common/loading'
+import loadingPic from '@/assets/images/loading.gif'
 
 const StoreInfo = (props) => {
     const { restaurants, loading } = props
@@ -37,7 +38,7 @@ const StoreInfo = (props) => {
     }, [])
     return (
         <Wrapper>
-            <Scroll onScoll={forceCheck}  >
+           
             <ul className='wrapper' >
                 {
                     data.map((item) => {
@@ -53,7 +54,7 @@ const StoreInfo = (props) => {
                                         <div className="poilist-item-icon">
                                             <LazyLoad
                                                
-                                                placeholder={<img width="100%" height="100%" src='/src/assets/images/loading.gif' />}
+                                                placeholder={<img width="100%" height="100%" src={loadingPic} />}
                                             >
                                                 <img className="poilist-item-icon-pic" src={item.pic} />
                                             </LazyLoad>
@@ -144,7 +145,7 @@ const StoreInfo = (props) => {
                         <Loading></Loading>
                     </EnterLoading> : null
             }
-            </Scroll>
+           
         </Wrapper>
 
     )

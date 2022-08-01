@@ -9,15 +9,7 @@ function Modal(props) {
         // 这里的show 是父组件传过来的
         setVisible(show)
     }, [show])
-    // const closeModal = () => {
-    //     setVisible(false)
-    //     onClose && onClose()
-    // }
-    // const confirm = () => {
-    //     setVisible(false)
-    //     onConfirm && onConfirm()
-    // }
-    // 这是属于遮罩层 点击它也会关闭模态框
+ 
     const maskClick = () => {
         setVisible(false)
         onClose && onClose()

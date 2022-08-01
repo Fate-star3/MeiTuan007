@@ -41,7 +41,7 @@ export const Wrapper = styled.div`
         
     }
     
-    ._2eXeTl_BESb4iT-0WlHcaG {
+    .navbar-searchbox {
     -webkit-flex: 0 0 auto;
     flex: 0 0 auto;
     display: flex;
@@ -52,7 +52,7 @@ export const Wrapper = styled.div`
     border-radius: 100px;
     margin-left: 100px;
 }
-._2eXeTl_BESb4iT-0WlHcaG input {
+.navbar-searchbox input {
     width: 100%;
     background: #eee;
     -webkit-align-self: center;
@@ -66,7 +66,7 @@ export const Wrapper = styled.div`
     overflow: hidden;
     opacity: 1;
 }
-    ._2eXeTl_BESb4iT-0WlHcaG .hPfx1lboARt57b7-TmUkf {
+    .navbar-searchbox .searchbox-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -76,7 +76,7 @@ export const Wrapper = styled.div`
     -webkit-align-items: center;
     align-items: center;
 }
-._2eXeTl_BESb4iT-0WlHcaG .hPfx1lboARt57b7-TmUkf ._2TpbiU8xb0dZksC63RzV_R {
+.navbar-searchbox .searchbox-content .searchbox-content-icon {
     background: url("https://p0.meituan.net/openhfiveimages/a7b59ad3ad25e21f59e0b4feb53647dd1517.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -87,7 +87,7 @@ export const Wrapper = styled.div`
     margin-left: 6px;
     margin-right: 4px;
 }
-._2eXeTl_BESb4iT-0WlHcaG .hPfx1lboARt57b7-TmUkf ._14y9Nh9BIFkJnO0qrwNtcU {
+.navbar-searchbox .searchbox-content .searchbox-content-search {
     -webkit-flex: auto;
     flex: auto;
     font-size: 12px;
@@ -96,7 +96,7 @@ export const Wrapper = styled.div`
     text-align: center;
     margin-right: 2px;
 }
-._2eXeTl_BESb4iT-0WlHcaG .hPfx1lboARt57b7-TmUkf .RfVKwPPkC35EzrFFx8Waz {
+.navbar-searchbox .searchbox-content .searchbox-content-desc {
     -webkit-flex: auto;
     flex: auto;
     font-size: 11px;
