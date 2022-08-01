@@ -1,4 +1,4 @@
-import{D as a,E as t,s as n,c as d,r as c,j as e,f as s}from"./index.6c558714.js";const o=p=>({type:t,data:p}),w=()=>p=>{a().then(r=>{const l=o(r.data.data);p(l)})},g=n.div`
+import{D as a,E as t,s as n,c as d,r as c,j as e,f as s}from"./index.eebb2df6.js";const o=p=>({type:t,data:p}),w=()=>p=>{a().then(r=>{const l=o(r.data.data);p(l)})},g=n.div`
     .seller {
     position: absolute;
     left: 0;
@@ -25,7 +25,7 @@ import{D as a,E as t,s as n,c as d,r as c,j as e,f as s}from"./index.6c558714.js
 
   .seller .seller-wrapper .seller-view .address-wrapper .address-left {
     flex: 1;
-    background: url('/src/assets/images/seller/address.png') no-repeat left center;
+    background: url('./src/assets/images/seller/address.png') no-repeat left center;
     padding-left: 26px;
     padding-right: 31px;
     background-size: 14px 16px;
@@ -35,14 +35,14 @@ import{D as a,E as t,s as n,c as d,r as c,j as e,f as s}from"./index.6c558714.js
 
   .seller .seller-wrapper .seller-view .address-wrapper .address-right {
     flex: 0 0 60px;
-    background: url('/src/assets/images/seller/line.png') no-repeat left center;
+    background: url('./src/assets/images/seller/line.png') no-repeat left center;
     background-size: 1px 15px;
   }
 
   .seller .seller-wrapper .seller-view .address-wrapper .address-right .content {
     width: 100%;
     height: 100%;
-    background: url('/src/assets/images/seller/phone.png') no-repeat center center;
+    background: url('./src/assets/images/seller/phone.png') no-repeat center center;
     background-size: 18px 18px;
   }
 
@@ -71,7 +71,7 @@ import{D as a,E as t,s as n,c as d,r as c,j as e,f as s}from"./index.6c558714.js
 
   .seller .seller-wrapper .seller-view .safety-wrapper {
     padding: 15px 14px 15px 25px;
-    background: url('/src/assets/images/seller/safety.png') no-repeat left center;
+    background: url('./src/assets/images/seller/safety.png') no-repeat left center;
     background-size: 14px 16px;
     font-size: 14px;
   }
@@ -86,7 +86,7 @@ import{D as a,E as t,s as n,c as d,r as c,j as e,f as s}from"./index.6c558714.js
   }
 
   .seller .seller-wrapper .tip-wrapper .delivery-wrapper {
-    background: url('/src/assets/images/seller/delivery.png') no-repeat left center;
+    background: url('./src/assets/images/seller/delivery.png') no-repeat left center;
     background-size: 14px 16px;
     padding: 15px 0 15px 25px;
     font-size: 14px;
@@ -94,7 +94,7 @@ import{D as a,E as t,s as n,c as d,r as c,j as e,f as s}from"./index.6c558714.js
   }
 
   .seller .seller-wrapper .tip-wrapper .shipping-wrapper {
-    background: url('/src/assets/images/seller/time.png') no-repeat left center;
+    background: url('./src/assets/images/seller/time.png') no-repeat left center;
     padding: 15px 17px 15px 25px;
     background-size: 15px 15px;
     font-size: 14px;
@@ -106,7 +106,7 @@ import{D as a,E as t,s as n,c as d,r as c,j as e,f as s}from"./index.6c558714.js
   }
 
   .seller .seller-wrapper .other-wrapper .server-wrapper {
-    background: url('/src/assets/images/seller/server.png') no-repeat left center;
+    background: url('./src/assets/images/seller/server.png') no-repeat left center;
     background-size: 15px 15px;
     padding: 15px 0 17px 25px;
     font-size: 14px;

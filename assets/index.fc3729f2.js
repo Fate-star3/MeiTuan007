@@ -1,4 +1,4 @@
-import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L as _,c as A,o as C,q as B}from"./index.6c558714.js";const G=i=>({type:y,data:i}),L=i=>({type:z,data:i}),j=i=>({type:F,data:i}),S=i=>({type:E,data:i}),O=()=>i=>{N().then(c=>{const s=G(c.data.data.food_spu_tags);i(s),i(L(!1))})},H=b.div`
+import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L as _,c as A,o as C,q as B}from"./index.eebb2df6.js";const G=i=>({type:y,data:i}),L=i=>({type:z,data:i}),j=i=>({type:F,data:i}),S=i=>({type:E,data:i}),O=()=>i=>{N().then(c=>{const s=G(c.data.data.food_spu_tags);i(s),i(L(!1))})},H=b.div`
     position: fixed;
     left: 0;
     right: 0;
@@ -7,7 +7,6 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
     width: 100%;
     height: 100%;
     margin: auto;
-    background-color: #fff;
 `,T=b.div`
 
 
@@ -88,7 +87,7 @@ import{k as N,l as y,G as z,m as F,n as E,s as b,r as D,j as t,f as e,d as x,L a
   .goods .foods-wrapper .food-list .title {
     height: 13px;
     font-size: 13px;
-    background: url(yellowPic) no-repeat left center;
+    background: url('./src/assets/images/btn_yellow_highlighted@2x.png') no-repeat left center;
     background-size: 2px 10px;
     padding-left: 7px;
     margin-bottom: 12px;
