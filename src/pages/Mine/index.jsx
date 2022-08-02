@@ -1,7 +1,8 @@
-import React from 'react'
+import React ,{memo,useEffect}from 'react'
 
-export default function Mine() {
+ function Mine() {
   return (
     <div>Mine</div>
   )
 }
+export default memo(Mine)

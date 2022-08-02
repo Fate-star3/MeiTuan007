@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef,memo } from 'react'
 import { Wrapper } from './style'
 import { isFixed } from '@/api/utils'
 
-export default function index(props) {
+ function StoreList(props) {
     const [show, setShow] = useState(true)
     const listRef = useRef()
     const { methods, containerRef } = props
@@ -107,3 +107,4 @@ export default function index(props) {
         </Wrapper>
     )
 }
+export default memo(StoreList)

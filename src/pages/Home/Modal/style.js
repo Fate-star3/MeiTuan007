@@ -43,7 +43,7 @@ export const Wrapper = styled.div`
 .modal-filter .modal-sort .sort-item {
     font-size: 14px;
     color: #666460;
-    line-height: 44px;
+    line-height: 2rem;
     position: relative;
     overflow: visible;
 }
@@ -78,7 +78,7 @@ export const Wrapper = styled.div`
 .modal-filter .modal-sort .sort-item {
     font-size: 14px;
     color: #666460;
-    line-height: 44px;
+    line-height: 2rem;
     position: relative;
     overflow: visible;
 }

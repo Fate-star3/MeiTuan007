@@ -29,13 +29,12 @@ export const Wrapper = styled.div`
   .goods .menu-wrapper {
     flex: 0 0 3.86rem;
     background: #f4f4f4;
-    /* overflow-y: overlay; */
+    overflow-y: auto;
   }
 
   .goods .foods-wrapper {
     flex: 1;
     overflow-y: overlay;
-
 
   }
 

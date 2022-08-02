@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FooterWrapper } from './style'
 import classnames from 'classnames'
 import { isPathPartlyExisted } from '@/utils/index.js'
 
-export default function Footer(props) {
+function Footer(props) {
   const { pathname } = useLocation()
- 
+
   if (isPathPartlyExisted(pathname)) {
-    
+
     return
   }
   return (
@@ -33,3 +33,4 @@ export default function Footer(props) {
     </FooterWrapper>
   )
 }
+export default memo(Footer)

@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,memo } from 'react'
 import { Wrapper } from './style'
 import Swiper from 'swiper'
 
-export default function SetMeal() {
+ function SetMeal() {
     useEffect(() => {
         // 轮播图挂载
         new Swiper('.home_info_banners', {
@@ -56,3 +56,5 @@ export default function SetMeal() {
         </Wrapper>
     )
 }
+
+export default memo(SetMeal)

@@ -39,4 +39,4 @@ import { Wraper } from './style'
     )
 }
 
-export default Banners
+export default memo(Banners)

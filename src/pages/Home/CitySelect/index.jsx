@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,memo } from 'react'
 import { Wrapper } from './style'
 import { Link } from 'react-router-dom'
 
 // 子组件一般不做数据请求 由父组件统一并传参过来
-export default function CitySelect(props) {
+ function CitySelect(props) {
   let { cityName } = props
 
 cityName =='' && window.sessionStorage.getItem("cityName") ? cityName = window.sessionStorage.getItem("cityName") : (window.sessionStorage.cityName = cityName)
@@ -21,3 +21,4 @@ cityName =='' && window.sessionStorage.getItem("cityName") ? cityName = window.s
     </Wrapper>
   )
 }
+export default memo(CitySelect)

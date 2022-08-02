@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef ,memo} from 'react'
 import { connect } from 'react-redux'
 import { Wrapper } from './style'
 import { useSearchParams, useNavigate } from 'react-router-dom';
@@ -80,5 +80,5 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(memo(Home))
 

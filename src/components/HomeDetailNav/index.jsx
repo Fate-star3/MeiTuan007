@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, memo } from 'react'
 import propTyes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 import { Wrapper } from './style'
 
-export default function HomeDetailNav({ id }) {
+function HomeDetailNav({ id }) {
 
     // 页面二级路由的导航准备
     let homeNavs = [
@@ -29,7 +29,7 @@ export default function HomeDetailNav({ id }) {
                             )
                         })
                     }
-                    <div id="menuSearch" className="navbar-searchbox" style={{width:"57px"}}>
+                    <div id="menuSearch" className="navbar-searchbox" style={{ width: "57px" }}>
                         <input type="search" name="" id="" />
                         <div className="searchbox-content">
                             <div className="searchbox-content-icon">
@@ -49,3 +49,4 @@ export default function HomeDetailNav({ id }) {
 HomeDetailNav.propTyes = {
     id: propTyes.string.isRequired
 }
+export default memo(HomeDetailNav)

@@ -209,4 +209,4 @@ const mapDispatchToProps = (dispatch) => {
 
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(HomeComment)
+export default connect(mapStateToProps, mapDispatchToProps)(memo(HomeComment))

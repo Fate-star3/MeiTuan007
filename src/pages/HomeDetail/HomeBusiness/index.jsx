@@ -1,4 +1,4 @@
-import React,{useState,useEffect}from 'react'
+import React,{useState,useEffect,memo}from 'react'
 import { Wrapper } from './style'
 import { connect } from 'react-redux'
 import { getBusinessList } from './store/actionCreators'
@@ -103,4 +103,4 @@ const mapDispatchToProps = (dispatch) => {
 
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(HomeBusiness)
+export default connect(mapStateToProps, mapDispatchToProps)(memo(HomeBusiness))

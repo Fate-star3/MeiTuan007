@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect,memo } from 'react'
 import { Link } from 'react-router-dom'
 import { Wrapper } from './style'
 import classnames from 'classnames'
@@ -145,4 +145,4 @@ function ShoppingCart(props) {
         </Wrapper>
     )
 }
-export default ShoppingCart
+export default memo(ShoppingCart)

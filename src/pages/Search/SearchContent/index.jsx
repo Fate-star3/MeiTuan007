@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{memo} from 'react'
 import {Wrapper }from './style'
 
 function SearchContent() {
@@ -29,4 +29,4 @@ function SearchContent() {
        </Wrapper>
     )
 }
-export default SearchContent
+export default memo(SearchContent)

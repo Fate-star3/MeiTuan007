@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Wrapper } from './style'
 import { useState, useEffect } from 'react'
 function Modal(props) {
     const [visible, setVisible] = useState(false)
-    const { visible: show} = props
+    const { visible: show } = props
     const { onClose, onConfirm } = props
     useEffect(() => {
         // 这里的show 是父组件传过来的
         setVisible(show)
     }, [show])
- 
+
     const maskClick = () => {
         setVisible(false)
         onClose && onClose()
@@ -42,4 +42,4 @@ function Modal(props) {
     )
 }
 
-export default Modal
+export default memo(Modal)

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef ,memo } from 'react'
 import { Link } from 'react-router-dom'
 import { Wrapper, EnterLoading } from './style'
 // 组件
@@ -152,4 +152,4 @@ const StoreInfo = (props) => {
 }
 
 
-export default StoreInfo
+export default memo(StoreInfo)

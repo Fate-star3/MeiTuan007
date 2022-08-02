@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     height: 1.6rem;
     background:#fff;
     border-bottom: 0.045rem solid #ccc;
+    overflow:hidden;
     .nav-box{
         display:flex;
         height: 1.6rem!important;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,memo } from 'react';
 import { CityWrapper } from './style'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
@@ -45,4 +45,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Cities)
+export default connect(mapStateToProps, mapDispatchToProps)(memo(Cities))

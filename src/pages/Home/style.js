@@ -36,11 +36,10 @@ export const Wrapper = styled.div`
                      overflow: hidden;
                      text-overflow: ellipsis;
                      padding-right: 1.36rem;
-                     font-size: 0.06rem;
+                     font-size: 0.6rem;
                      color: #858687;
                      opacity: 1;
                      display: flex;
-                     -webkit-align-items: center;
                      align-items: center;
                      outline:none;
                     }
@@ -61,8 +60,8 @@ export const Wrapper = styled.div`
                          background: url('https://s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:9096d347/4601f5ad6630220c49ad11362304e2d1.png');
                          background-repeat: no-repeat;
                          background-size: contain;
-                         width: 0.06rem;
-                         height: 0.06rem;
+                         width: 0.6rem;
+                         height: 0.6rem;
                          margin: 0 0.23rem 0 0.5rem;
                          position: absolute;
                          left: 0;
@@ -70,7 +69,7 @@ export const Wrapper = styled.div`
                          -webkit-transform: translateY(-50%);
                          transform: translateY(-50%);
                         }
-            }
+        }
  
 
 

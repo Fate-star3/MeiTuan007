@@ -1,4 +1,4 @@
-import React, { useState, useEffect ,useRef} from 'react'
+import React, { useState, useEffect ,memo} from 'react'
 import { Wrapper, EnterLoading } from './style'
 import {
   getGoodsList,
@@ -209,4 +209,4 @@ const mapDispatchToProps = (dispatch) => {
 
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(HomeOrder)
+export default connect(mapStateToProps, mapDispatchToProps)(memo(HomeOrder))
