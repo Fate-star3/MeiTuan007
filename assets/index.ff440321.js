@@ -1,4 +1,4 @@
-import{k,l as y,G as z,m as F,n as E,s as x,r as v,j as e,f as t,d as D,L as _,c as A,o as C,q as B}from"./index.96b17397.js";const G=i=>({type:y,data:i}),L=i=>({type:z,data:i}),j=i=>({type:F,data:i}),S=i=>({type:E,data:i}),O=()=>i=>{k().then(c=>{const s=G(c.data.data.food_spu_tags);i(s),i(L(!1))})},H=x.div`
+import{k,l as y,G as z,m as F,n as E,s as x,r as v,j as e,f as t,d as D,L as _,c as A,o as C,q as B}from"./index.20595181.js";const G=i=>({type:y,data:i}),L=i=>({type:z,data:i}),j=i=>({type:F,data:i}),S=i=>({type:E,data:i}),O=()=>i=>{k().then(c=>{const s=G(c.data.data.food_spu_tags);i(s),i(L(!1))})},H=x.div`
     position: fixed;
     left: 0;
     right: 0;
@@ -83,7 +83,7 @@ import{k,l as y,G as z,m as F,n as E,s as x,r as v,j as e,f as t,d as D,L as _,c
   .goods .foods-wrapper .food-list .title {
     height: 0.6rem;
     font-size: 0.6rem;
-    background: url('../src/assets/images/btn_yellow_highlighted@2x.png') no-repeat left center;
+    background: url('./src/assets/images/btn_yellow_highlighted@2x.png') no-repeat left center;
     background-size: 2px 0.45rem;
     padding-left: 0.58rem;
     margin-bottom: 0.545rem;
