@@ -6,10 +6,10 @@ export const getBannersRequest = () =>
     axios.get('https://www.fastmock.site/mock/0a7dd8897c829f1675e2e5962a305383/MeiTuan/banners')
 export const getRestaurantsRequest = () =>
     axios.get('https://www.fastmock.site/mock/0a7dd8897c829f1675e2e5962a305383/MeiTuan/restaurants')
-// export const getHomeDetailOrderRequest  = () =>
-//     axios.get('/src/assets/data/goods.json')
-export const getHomeDetailOrderRequest = () =>
-    axios.get('https://fate-star3.github.io/MeiTuan007/data/goods.json')
+export const getHomeDetailOrderRequest  = () =>
+    axios.get('/src/assets/data/goods.json')
+// export const getHomeDetailOrderRequest = () =>
+//     axios.get('https://fate-star3.github.io/MeiTuan007/data/goods.json')
 export const getHomeDetailCommentRequest = () =>
     axios.get('https://www.fastmock.site/mock/0a7dd8897c829f1675e2e5962a305383/MeiTuan/assess')
 export const getHomeDetailSellerRequest = () =>

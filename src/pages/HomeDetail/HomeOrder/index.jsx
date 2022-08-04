@@ -179,12 +179,14 @@ const mapStateToProps = (state) => {
   state.goods.GoodsList.forEach((item) => {
     if (item.name != '热销') {
       item.spus.forEach((item) => {
-        let price = 0
+        let price = 0    
         price += (item.praise_num > 0 ? item.min_price * item.praise_num : 0)
         arr.push(price)
       })
     }
+
   })
+
   return {
     goods: state.goods.GoodsList,
     loading: state.goods.Loading,

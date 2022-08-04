@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
 
   .seller .seller-wrapper .seller-view .address-wrapper .address-left {
     flex: 1;
-    background: url('/src/assets/images/seller/address.png') no-repeat left center;
+    background: url('./src/assets/images/seller/address.png') no-repeat left center;
     padding-left: 1.2rem;
     padding-right: 1.41rem;
     background-size: 0.636rem 0.727rem;
@@ -37,14 +37,14 @@ export const Wrapper = styled.div`
 
   .seller .seller-wrapper .seller-view .address-wrapper .address-right {
     flex: 0 0 60px;
-    background: url('/src/assets/images/seller/line.png') no-repeat left center;
+    background: url('./src/assets/images/seller/line.png') no-repeat left center;
     background-size: 0.09rem 0.681rem;
   }
 
   .seller .seller-wrapper .seller-view .address-wrapper .address-right .content {
     width: 100%;
     height: 100%;
-    background: url('/src/assets/images/seller/phone.png') no-repeat center center;
+    background: url('./src/assets/images/seller/phone.png') no-repeat center center;
     background-size: 0.81rem 0.81rem;
   }
 
@@ -73,7 +73,7 @@ export const Wrapper = styled.div`
 
   .seller .seller-wrapper .seller-view .safety-wrapper {
     padding: 0.681rem 0.636rem 0.681rem 1.136rem;
-    background: url('/src/assets/images/seller/safety.png') no-repeat left center;
+    background: url('./src/assets/images/seller/safety.png') no-repeat left center;
     background-size: 0.636rem 0.727rem;
     font-size: 0.636rem;
   }
@@ -88,7 +88,7 @@ export const Wrapper = styled.div`
   }
 
   .seller .seller-wrapper .tip-wrapper .delivery-wrapper {
-    background: url('/src/assets/images/seller/delivery.png') no-repeat left center;
+    background: url('./src/assets/images/seller/delivery.png') no-repeat left center;
     background-size: 0.636rem 0.727rem;
     padding: 0.681rem 0 0.681rem 1.136rem;
     font-size: 0.636rem;
@@ -96,7 +96,7 @@ export const Wrapper = styled.div`
   }
 
   .seller .seller-wrapper .tip-wrapper .shipping-wrapper {
-    background: url('/src/assets/images/seller/time.png') no-repeat left center;
+    background: url('./src/assets/images/seller/time.png') no-repeat left center;
     padding: 0.681rem 0.77rem 0.681rem 1.136rem;
     background-size: 0.681rem 0.681rem;
     font-size: 0.636rem;
@@ -108,7 +108,7 @@ export const Wrapper = styled.div`
   }
 
   .seller .seller-wrapper .other-wrapper .server-wrapper {
-    background: url('/src/assets/images/seller/server.png') no-repeat left center;
+    background: url('./src/assets/images/seller/server.png') no-repeat left center;
     background-size: 0.681rem 0.681rem;
     padding: 0.681rem 0 0.77rem 1.136rem;
     font-size: 0.636rem;

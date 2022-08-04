@@ -13,11 +13,15 @@ export default (state = defaulState, action) => {
     let changeList = []
     switch (action.type) {
         case actionTypes.CHANGE_GOODS_LIST:
-            console.log(state,action);
-            return {
-                ...state,
-                GoodsList: action.data,
-            }
+            // console.log(state, action);
+            action.data.map((item) => {
+                item.spus.map((item) => {
+                    item.praise_num = 0
+                })
+            })
+
+            return Object.assign({}, state, { GoodsList: [...action.data] })
+
         case actionTypes.GET_LOADING:
             return {
                 ...state,
