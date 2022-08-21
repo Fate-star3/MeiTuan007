@@ -1,44 +1,42 @@
-import React, { useEffect, useState, useRef ,memo } from 'react'
+import React, { useEffect, useState, useRef, memo } from 'react'
 import { Link } from 'react-router-dom'
 import { Wrapper, EnterLoading } from './style'
-// 组件
-import Scroll from '@/components/common/Scroll'
-import BScroll from 'better-scroll'
 // 图片延迟加载
-import LazyLoad from 'react-lazyload'
-import { forceCheck } from 'react-lazyload'
 import Loading from '@/components/common/loading'
 import loadingPic from '@/assets/images/loading.gif'
+import { lazyload } from '@/api/utils.js'
+import { InfiniteScroll } from 'antd-mobile'
+import { mockRequest } from './data'
 
 const StoreInfo = (props) => {
     const { restaurants, loading } = props
-    const [data = restaurants ,setData ] =useState()
-    // const lazyLoad = useRef()
+    const [data, setData] = useState(restaurants)
+    const [hasMore, setHasMore] = useState(true)
+    async function loadMore() {
+        const append = await mockRequest(restaurants)    
+       setData(val => [...val,...append])
+        console.log(data);
+        setHasMore(append.length > 0)
+    }
     useEffect(() => {
-        // function callback() {
-        //     const top = lazyLoad.current.getBoundingClientRect().top;
-        //     const windowHeight = window.screen.height;
-        //     console.log(top,windowHeight);
-        //     if (top && top < windowHeight) {
-        //         // 当 wrapper 已经被滚动到页面可视范围之内触发
-        //         setData(() => {
-        //             return data.push([...restaurants])
-        //         })
-                
-        //     }
-        // }
-        // window.addEventListener('scroll', function () {
-        //     if (timeCount) {
-        //         clearTimeout(timeCount);
-        //     }
-        //    var timeCount = setTimeout(callback, 50);
-        // })
-
+        lazyload('.poilist-item-icon-pic')
 
     }, [])
+    window.addEventListener('scroll', function () {
+        let timer;
+        if (timer) {
+            return true
+        }
+        timer = setTimeout(() => {
+            lazyload('.poilist-item-icon-pic')
+            timer = null
+        }, 500);
+
+    })
+
     return (
         <Wrapper>
-           
+
             <ul className='wrapper' >
                 {
                     data.map((item) => {
@@ -52,12 +50,7 @@ const StoreInfo = (props) => {
                                 >
                                     <div className="poilist-item" style={{ position: "relative" }}>
                                         <div className="poilist-item-icon">
-                                            <LazyLoad
-                                               
-                                                placeholder={<img width="100%" height="100%" src={loadingPic} />}
-                                            >
-                                                <img className="poilist-item-icon-pic" src={item.pic} />
-                                            </LazyLoad>
+                                            <img className="poilist-item-icon-pic" data-src={item.pic} src={loadingPic} />
                                             <div className="poilist-item-icon-poitypepic">
                                                 <img className="poitype-pic" src={item.pic_icon} />
                                             </div>
@@ -137,7 +130,7 @@ const StoreInfo = (props) => {
                         )
                     })
                 }
-               {/* <div className="loadMore" ref={lazyLoad}>加载更多</div> */}
+                <InfiniteScroll loadMore={loadMore} hasMore={hasMore} />
             </ul>
             {
                 loading ?
@@ -145,7 +138,7 @@ const StoreInfo = (props) => {
                         <Loading></Loading>
                     </EnterLoading> : null
             }
-           
+
         </Wrapper>
 
     )

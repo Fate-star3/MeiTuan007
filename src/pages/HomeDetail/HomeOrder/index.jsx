@@ -1,4 +1,4 @@
-import React, { useState, useEffect ,memo} from 'react'
+import React, { useState, useEffect, memo } from 'react'
 import { Wrapper, EnterLoading } from './style'
 import {
   getGoodsList,
@@ -6,7 +6,7 @@ import {
   changeGoodsAllNumAction
 } from './store/actionCreators'
 import { connect } from 'react-redux'
-import {menuBgChange} from '@/api/utils.js'
+import { menuBgChange } from '@/api/utils.js'
 // 组件
 import Scroll from '@/components/common/Scroll'
 import ShoppingCart from '@/components/ShoppingCart'
@@ -30,9 +30,9 @@ function HomeOrder(props) {
 
   useEffect(() => {
     getGoodsListDispatch()
-    
+
   }, [])
- 
+
 
   // 商品数量加减
   const changeGoodNum = (e, status, id) => {
@@ -64,6 +64,13 @@ function HomeOrder(props) {
         item.spus.map((ele) => {
           num += ele.praise_num
         })
+      } else {
+        item.spus.map((ele) => {
+          if (ele.name == '麦乐鸡5块') {
+            num += ele.praise_num
+          }
+          
+        })
       }
     })
     return num
@@ -80,7 +87,7 @@ function HomeOrder(props) {
       })
 
       return (
-        <li className="menu-item" key={index} onClick={(e) => { scrollToAnchorLeft(item.name)&& menuBgChange()}} >
+        <li className="menu-item" key={index} onClick={(e) => { scrollToAnchorLeft(item.name) && menuBgChange() }} >
           <div className="text" >
             {num > 0 && <div className="menu-item-icon menu-item-iconv2">{num}</div>}
             <img src={item.icon ? item.icon : ''} style={{ width: "15px" }} />
@@ -179,7 +186,7 @@ const mapStateToProps = (state) => {
   state.goods.GoodsList.forEach((item) => {
     if (item.name != '热销') {
       item.spus.forEach((item) => {
-        let price = 0    
+        let price = 0
         price += (item.praise_num > 0 ? item.min_price * item.praise_num : 0)
         arr.push(price)
       })

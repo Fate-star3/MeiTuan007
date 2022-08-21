@@ -23,31 +23,30 @@ export const Wrapper = styled.div`
     bottom: 0px;
     overflow: hidden;
     width: 100%;
-    /* overflow:auto; */
   }
 
   .goods .menu-wrapper {
     flex: 0 0 3.86rem;
     background: #f4f4f4;
-    overflow-y: auto;
+    overflow: auto;
+    &::-webkit-scrollbar {
+            display: none;
+        }
   }
 
   .goods .foods-wrapper {
     flex: 1;
-    overflow-y: overlay;
+    overflow: auto;
+    &::-webkit-scrollbar {
+            display: none;
+        }
 
   }
-
   .goods .menu-wrapper .menu-item {
     list-style-type: none;
     padding: 0.72rem 1.05rem 0.68rem 0.45rem;
     border-bottom: 1px solid #E4E4E4;
     position: relative;
-  }
-
-  .goods .foods-wrapper {
-    flex: 1;
-
   }
 
   .goods .menu-wrapper .menu-item .text {
@@ -174,7 +173,7 @@ export const Wrapper = styled.div`
     font-weight: bold;
     margin-top: -1px;
   }
-
+ 
   .goods .menu-wrapper .menu-item:first-child.current {
     margin-top: 1px;
   }

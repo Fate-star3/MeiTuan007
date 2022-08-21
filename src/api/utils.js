@@ -28,7 +28,7 @@ export const debounce = (func, delay) => {
 // 背景颜色的变化随时间变化
 export const backGroundColor = (str) => {
    let box = document.querySelector(str)
-   let timeout = new Date().getHours() 
+   let timeout = new Date().getHours()
    if (timeout >= 18) {
       box.classList.add('bgColor')
       document.querySelector('.next').classList.remove('icon_city-next')
@@ -54,4 +54,40 @@ export const menuBgChange = () => {
 
 
    }
+}
+
+export const lazyload = (str) => {
+
+   let imgLists = document.querySelectorAll(str)
+   imgLists = Array.from(imgLists)
+   // console.log(imgLists);
+   let length = imgLists.length
+   let count = 0
+
+   let imgLazyLoad = (function () {
+
+      return function () {
+         let deleteIndexLists = []
+      
+         imgLists.forEach((img, index) => {
+            
+            let rect = img.getBoundingClientRect()
+            if (rect.top < window.innerHeight) {
+               img.src = img.dataset.src
+               deleteIndexLists.push(index)
+               count++
+               if (count == length) {
+                  document.removeEventListener('click', imgLazyLoad)
+               }
+            }
+
+         })
+         imgLists = imgLists.filter((img, index) => !deleteIndexLists.includes(index))
+
+      }
+
+   })()
+
+   window.addEventListener('scroll', imgLazyLoad)
+
 }

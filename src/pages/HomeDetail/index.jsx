@@ -102,7 +102,8 @@ function HomeDetail() {
         </div>
       </div>
       <HomeDetailNav id={id} />
-      <Outlet />
+       <Outlet />
+      {/* 在父组件中使用Outlet来显示匹配到的子组件 */}
     </Wrapper >
   )
 }

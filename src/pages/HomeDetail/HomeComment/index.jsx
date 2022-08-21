@@ -3,14 +3,11 @@ import { Wrapper, EnterLoading } from './style'
 import { connect } from 'react-redux'
 import { Tabs, Badge } from 'antd-mobile'
 import starImg from '@/assets/images/star.png'
-import loading_pic from '@/assets/images/loading.gif'
-// 组件
-import Scroll from '@/components/common/Scroll'
-// 图片延迟加载
-import LazyLoad, { forceCheck } from 'react-lazyload'
 import Loading from '@/components/common/loading'
 import { getCommentsList, getNavList } from './store/actionCreators'
-
+// 图片延迟加载
+import loadingPic from '@/assets/images/loading.gif'
+import { lazyload } from '@/api/utils.js'
 
 function HomeComment(props) {
 
@@ -19,7 +16,12 @@ function HomeComment(props) {
   useEffect(() => {
     getCommentsListDispatch()
     getNavListDispatch()
+    lazyload(".content img")
   }, [])
+
+   
+  
+
   const navlist = () => {
     return navList.map(item => {
       return (
@@ -56,15 +58,7 @@ function HomeComment(props) {
             <div className="content">
               <span>{item.comment}</span>
               {item.user_pic_url &&
-                <LazyLoad
-
-                  placeholder={<img width="100%" height="100%" src={loading_pic} />}>
-                  <img
-                    width="100%"
-                    height="100%"
-                    src={item.user_pic_url}
-                  />
-                </LazyLoad>
+                <img data-src={item.user_pic_url} src={loadingPic} />
               }
             </div>
           </div>
@@ -76,7 +70,7 @@ function HomeComment(props) {
   }
   return (
     <Wrapper>
-     
+
       <div className="rating">
         <div className="rating-left">
           <div className="rating-left-hd">4.5</div>
@@ -153,11 +147,8 @@ function HomeComment(props) {
 
                       <div className="content">
                         <span>{item.comment}</span>
-                        <img
-                          width="100%"
-                          height="100%"
-                          src={item.user_pic_url}
-                        />
+                        <img data-src={item.user_pic_url} src={loadingPic} />
+
                       </div>
                     </div>
                   </li>
@@ -187,7 +178,7 @@ function HomeComment(props) {
             <Loading></Loading>
           </EnterLoading> : null
       }
-  
+
     </Wrapper>
   )
 }

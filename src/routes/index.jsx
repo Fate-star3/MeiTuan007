@@ -1,12 +1,12 @@
 // 独立配置文件 
-import { lazy} from 'react'
+import { lazy } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import Home from '@/pages/Home'
 const Order = lazy(() => import('@/pages/Order'))
 // const Member = lazy(() => import('@/pages/Member'))
 const Mine = lazy(() => import('@/pages/Mine'))
 const Cities = lazy(() => import('@/pages/Cities'))
-const Search = lazy(() =>import('@/pages/Search'))
+const Search = lazy(() => import('@/pages/Search'))
 const HomeDetail = lazy(() => import('@/pages/HomeDetail'))
 const HomeOrder = lazy(() => import('@/pages/HomeDetail/HomeOrder'))
 const HomeComment = lazy(() => import('@/pages/HomeDetail/HomeComment'))
@@ -19,18 +19,29 @@ const RoutesConfig = () => {
 
     return (
         <Routes>
-            <Route path="/" element={<Home /> }></Route>
+            <Route path="/" element={<Home />}></Route>
             <Route path="/home" element={<Home />}></Route>
             {/* <Route path="/member" element={<Member />}></Route> */}
             <Route path="/order" element={<Order />}></Route>
             <Route path="/mine" element={<Mine />}></Route>
             <Route path="/cities" element={<Cities />}></Route>
-            <Route path="/search" element={<Search/>}></Route>
-                <Route path="/homedetail/:id" element={<HomeDetail />}>
-                    <Route path='/homedetail/:id/order' element={<HomeOrder/>}></Route>
-                    <Route path='/homedetail/:id/comment' element={<HomeComment/>}></Route>
-                    <Route path='/homedetail/:id/business' element={<HomeBusiness/>}></Route>
-                </Route>
+            <Route path="/search" element={<Search />}></Route>
+            <Route path="/homedetail/:id" element={<HomeDetail />}>
+                <Route path='/homedetail/:id/order' index element={<HomeOrder />}></Route>
+                <Route path='/homedetail/:id/comment' element={<HomeComment />}></Route>
+                <Route path='/homedetail/:id/business' element={<HomeBusiness />}></Route>
+            </Route>
+            {/* 默认路由
+                定义：在嵌套路由中，如果 URL 仅匹配了父级 URL，则Outlet中会显示带有index属性的子路由。可以使用在路由的任何层级
+                   <Routes>
+                 < Route path="/foo" element={Foo}>
+                   <Route index element={Default}></Route>
+                   <Route path="bar" element={Bar}></Route>
+                 </Route>
+                /Routes>
+                当 url 为/foo时：Foo 中的 Outlet 会显示 Default 组件
+                当 url 为/foo/bar时：Foo 中的 Outlet 会显示为 Bar 组件 */}
+
         </Routes>
     )
 }
