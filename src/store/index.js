@@ -21,6 +21,14 @@ const storageConfig = {
 import thunk from 'redux-thunk'
 import reducer from './reducer'
 // 组件 中间件redux-thunk    数据
+// Redux的中间件，处于Action和Reducer之间，将中间某个过程拦截一下，进行一些处理再继续正常执行，这就是中间件的功能。
+// 那为什么要用到Redux中间件呢？
+// 对于异步请求的代码，我们最好将它们放到Redux中间件里面。
+// 然而Redux里面dispatch的过程中只允许传递对象，而不允许传递函数。于是，redux-thunk便应运而生。
+// 因此，redux-thunk其实是拦截了store的dispatch方法，Redux中store.dispatch原本是不能传一个函数进去的，但是redux-thunk让dispatch拥有的
+// 接受函数参数的能力。具体来说，如果dispatch方法中传递的是一个对象，那么直接按照正常的Redux工作流来运行，但如果是一个函数，那么直接执行它，
+// 并把store.dispatch这个方法当作第一个参数传进这个函数。
+
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

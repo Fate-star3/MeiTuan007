@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
         height: 1.6rem!important;
         line-height: 1.6rem!important;
         position:relative;
-        z-index: 999;
+        z-index: 2;
         background-color: #fff;
     }
     .nav-item{

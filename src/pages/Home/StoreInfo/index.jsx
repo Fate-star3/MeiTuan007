@@ -13,15 +13,17 @@ const StoreInfo = (props) => {
     const [data, setData] = useState(restaurants)
     const [hasMore, setHasMore] = useState(true)
     async function loadMore() {
-        const append = await mockRequest(restaurants)    
-       setData(val => [...val,...append])
-        console.log(data);
+        const append = await mockRequest(restaurants)
+        setData(val => [...val, ...append])
+        // console.log(data);
         setHasMore(append.length > 0)
     }
     useEffect(() => {
         lazyload('.poilist-item-icon-pic')
 
     }, [])
+    // 首屏渲染
+
     window.addEventListener('scroll', function () {
         let timer;
         if (timer) {
@@ -39,9 +41,9 @@ const StoreInfo = (props) => {
 
             <ul className='wrapper' >
                 {
-                    data.map((item) => {
+                    data.map((item, index) => {
                         return (
-                            <li key={item.id}>
+                            <li key={item.id + index}>
                                 <Link
                                     className='homelist'
                                     to={{

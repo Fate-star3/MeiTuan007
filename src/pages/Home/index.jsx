@@ -10,7 +10,7 @@ import CitySelect from './CitySelect'
 import Banners from './Banners';
 import Modal from './Modal';
 // api
-import { isFixed, backGroundColor, } from '@/api/utils'
+import { isFixed, backGroundColor,throttle } from '@/api/utils'
 import { getRestaurantsList, getBannersList } from './store/actionCreators'
 
 function Home(props) {
