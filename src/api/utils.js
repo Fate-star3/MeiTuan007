@@ -68,9 +68,9 @@ export const lazyload = (str) => {
 
       return function () {
          let deleteIndexLists = []
-      
+
          imgLists.forEach((img, index) => {
-            
+
             let rect = img.getBoundingClientRect()
             if (rect.top < window.innerHeight) {
                img.src = img.dataset.src
@@ -92,22 +92,22 @@ export const lazyload = (str) => {
 
 }
 
- // 函数节流的实现;
- export function throttle(fn, delay) {
+// 函数节流的实现;
+export function throttle(fn, delay) {
    // 现在的事件
    let curTime = Date.now();
 
    return function () {
-       let context = this,
-           args = arguments,
-           // 当前时间
-           nowTime = Date.now();
+      let context = this,
+         args = arguments,
+         // 当前时间
+         nowTime = Date.now();
 
-       // 如果两次时间间隔超过了指定时间，则执行函数。
-       if (nowTime - curTime >= delay) {
-           curTime = Date.now();
-           return fn.apply(context, args);
-       }
+      // 如果两次时间间隔超过了指定时间，则执行函数。
+      if (nowTime - curTime >= delay) {
+         curTime = Date.now();
+         return fn.apply(context, args);
+      }
    };
 }
 
@@ -117,8 +117,8 @@ export const lazyload = (str) => {
  * @params {path string}
  * @return boolean 
  */
- export const isPathPartlyExisted = (path) => {
-   const arr = ['/cities', '/homedetail','/search'];
+export const isPathPartlyExisted = (path) => {
+   const arr = ['/cities', '/homedetail', '/search', '/login'];
    let pathRes = path.split('/')
    if (pathRes[1] && arr.indexOf('/' + pathRes[1]) != -1) return true;
    return false

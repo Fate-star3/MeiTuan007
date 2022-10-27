@@ -14,11 +14,11 @@ import { PersistGate } from 'redux-persist/lib/integration/react';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store.store}>
-    <HashRouter>
+    <BrowserRouter>
       <PersistGate loading={null} persistor={store.persistor}>
         <App />
       </PersistGate>
-    </HashRouter>
+    </BrowserRouter>
   </Provider>
 
 )
