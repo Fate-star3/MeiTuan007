@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef ,memo} from 'react'
+import React, { useState, useEffect, useRef, memo } from 'react'
 import { connect } from 'react-redux'
 import { Wrapper } from './style'
 import { useSearchParams, useNavigate } from 'react-router-dom';
@@ -10,7 +10,7 @@ import CitySelect from './CitySelect'
 import Banners from './Banners';
 import Modal from './Modal';
 // api
-import { isFixed, backGroundColor,throttle } from '@/api/utils'
+import { isFixed, backGroundColor, throttle } from '@/utils'
 import { getRestaurantsList, getBannersList } from './store/actionCreators'
 
 function Home(props) {
@@ -43,8 +43,8 @@ function Home(props) {
         <div className="wraper" >
           <CitySelect cityName={cityName} className='city' />
           <div className="search seacrhv2">
-            <input placeholder="请输入商家或商品名称"/>
-              <div className="search-right" onClick={() => navigate('/search')}>搜索</div>
+            <input placeholder="请输入商家或商品名称" />
+            <div className="search-right" onClick={() => navigate('/search')}>搜索</div>
           </div>
         </div>
       </div>

@@ -29,6 +29,7 @@ export const Wrapper = styled.div`
     flex: 0 0 3.86rem;
     background: #f4f4f4;
     overflow: auto;
+    margin-top: 1rem;
     &::-webkit-scrollbar {
             display: none;
         }
@@ -80,12 +81,12 @@ export const Wrapper = styled.div`
     padding: 0.5rem;
   }
 .food-container {
-    margin-bottom:2rem;
+    margin:1rem 0 2rem 0;
 }
   .goods .foods-wrapper .food-list .title {
     height: 0.6rem;
     font-size: 0.6rem;
-    background: url('./src/assets/images/btn_yellow_highlighted@2x.png') no-repeat left center;
+    background: url('../../../assets/images/btn_yellow_highlighted@2x.png') no-repeat left center;
     background-size: 2px 0.45rem;
     padding-left: 0.58rem;
     margin-bottom: 0.545rem;

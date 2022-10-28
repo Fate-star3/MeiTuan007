@@ -1,9 +1,9 @@
-import React, { useState, useEffect,memo} from 'react'
+import React, { memo } from 'react'
 import { Link } from 'react-router-dom'
 import { Wraper } from './style'
 
- function Banners(props) {
-    const {banners} = props
+function Banners(props) {
+    const { banners } = props
     return (
         <Wraper>
             <div className="btn-banners swiper-container">
@@ -32,7 +32,7 @@ import { Wraper } from './style'
                     </div>
 
                 </div>
-              
+
             </div>
 
         </Wraper>

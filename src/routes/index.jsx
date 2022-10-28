@@ -7,7 +7,8 @@ const Order = lazy(() => import('@/pages/Order'))
 const Mine = lazy(() => import('@/pages/Mine'))
 const Cities = lazy(() => import('@/pages/Cities'))
 const Search = lazy(() => import('@/pages/Search'))
-const Login= lazy(() => import('@/pages/Login'))
+const Login = lazy(() => import('@/pages/Login'))
+const Register = lazy(() => import('@/pages/Register'))
 const HomeDetail = lazy(() => import('@/pages/HomeDetail'))
 const HomeOrder = lazy(() => import('@/pages/HomeDetail/HomeOrder'))
 const HomeComment = lazy(() => import('@/pages/HomeDetail/HomeComment'))
@@ -20,18 +21,20 @@ const RoutesConfig = () => {
 
     return (
         <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/home" element={<Home />}/>
-            <Route path="/order" element={<Order />}/>
-            <Route path="/mine" element={<Mine />}/>
-            <Route path="/cities" element={<Cities />}/>
-            <Route path="/search" element={<Search />}/>
-            <Route path='/login' element={<Login/>}/>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/order" element={<Order />} />
+            <Route path="/mine" element={<Mine />} />
+            <Route path="/cities" element={<Cities />} />
+            <Route path="/search" element={<Search />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
             <Route path="/homedetail/:id" element={<HomeDetail />}>
                 <Route path='/homedetail/:id/order' index element={<HomeOrder />} />
                 <Route path='/homedetail/:id/comment' element={<HomeComment />} />
                 <Route path='/homedetail/:id/business' element={<HomeBusiness />} />
             </Route>
+            <Route path='*' element={<Mine />} />
             {/* 默认路由
                 定义：在嵌套路由中，如果 URL 仅匹配了父级 URL，则Outlet中会显示带有index属性的子路由。可以使用在路由的任何层级
                    <Routes>

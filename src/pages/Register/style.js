@@ -17,7 +17,6 @@ export const Wrapper = styled.div`
     .form {
       width: 100%;
     padding: 1.2em;
-    padding-bottom: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 
@@ -38,17 +37,6 @@ export const Wrapper = styled.div`
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     font-size:16px;
     outline: none;
-    }
-    .sendCodeBtn {
-      margin-left: 0.5em;
-    font-size: 16px;
-    color: #000;
-    align-items: center;
-    padding: 0.2em 0.5em;
-    border-radius: 0.2em;
-    cursor: pointer;
-    outline: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
 
       }
@@ -92,20 +80,6 @@ export const Wrapper = styled.div`
     user-select: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
       }
-    }
-    .tonext {
-      width: 100%;
-      height: 44px;
-      line-height: 44px;
-      font-size:14px;
-      text-align:right;
-        p {
-          margin-right: 20px;
-          span {
-        color: rgb(52, 136, 255)
-      }
-        }
-   
     }
     .license {
       display:flex;

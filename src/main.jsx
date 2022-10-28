@@ -12,6 +12,7 @@ import { Provider } from 'react-redux'
 import store from './store'
 import { PersistGate } from 'redux-persist/lib/integration/react';
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store.store}>
     <BrowserRouter>

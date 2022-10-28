@@ -6,12 +6,12 @@ import {
   changeGoodsAllNumAction
 } from './store/actionCreators'
 import { connect } from 'react-redux'
-import { menuBgChange } from '@/api/utils.js'
+import { menuBgChange } from '@/utils'
 // 组件
 import Scroll from '@/components/common/Scroll'
 import ShoppingCart from '@/components/ShoppingCart'
 // 图片延迟加载
-import LazyLoad, { forceCheck } from 'react-lazyload'
+// import LazyLoad, { forceCheck } from 'react-lazyload'
 import Loading from '@/components/common/loading'
 
 function HomeOrder(props) {
@@ -69,7 +69,7 @@ function HomeOrder(props) {
           if (ele.name == '麦乐鸡5块') {
             num += ele.praise_num
           }
-          
+
         })
       }
     })
@@ -87,20 +87,20 @@ function HomeOrder(props) {
       })
 
       return (
-        <li className="menu-item" key={index} onClick={(e) => { scrollToAnchorLeft(item.name) && menuBgChange() }} >
+        <div className="menu-item" key={index} onClick={(e) => { scrollToAnchorLeft(item.name) && menuBgChange() }} >
           <div className="text" >
             {num > 0 && <div className="menu-item-icon menu-item-iconv2">{num}</div>}
             <img src={item.icon ? item.icon : ''} style={{ width: "15px" }} />
             {item.name}
           </div>
-        </li>
+        </div>
       )
     })
   }
   const goodsContent = () => {
     return details.map((item, index) => {
       return (
-        <li className="food-list food-list-hook" key={index} id={item.name}>
+        <div className="food-list food-list-hook" key={index} id={item.name}>
           <h3 className="title">{item.name}</h3>
           {/* <!-- 具体的商品列表 --> */}
           <ul >
@@ -144,7 +144,7 @@ function HomeOrder(props) {
               })
             }
           </ul>
-        </li>
+        </div>
       )
     })
 

@@ -201,8 +201,6 @@ export const Wrapper = styled.div`
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
  .comment-header {

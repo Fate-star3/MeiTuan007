@@ -7,7 +7,7 @@ import Loading from '@/components/common/loading'
 import { getCommentsList, getNavList } from './store/actionCreators'
 // 图片延迟加载
 import loadingPic from '@/assets/images/loading.gif'
-import { lazyload } from '@/api/utils.js'
+import { lazyload } from '@/utils'
 
 function HomeComment(props) {
 
@@ -19,8 +19,6 @@ function HomeComment(props) {
     lazyload(".content img")
   }, [])
 
-   
-  
 
   const navlist = () => {
     return navList.map(item => {

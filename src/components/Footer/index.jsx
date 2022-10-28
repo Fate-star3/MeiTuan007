@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FooterWrapper } from './style'
 import classnames from 'classnames'
-import { isPathPartlyExisted } from '@/api/utils.js'
+import { isPathPartlyExisted } from '@/utils'
 
 function Footer(props) {
   const { pathname } = useLocation()

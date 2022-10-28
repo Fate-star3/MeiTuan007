@@ -1,29 +1,65 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Wrapper } from './style'
+import axios from 'axios'
+
+import { useNavigate } from 'react-router-dom'
 import loginPic from '@/assets/images/登录.png'
 
 const Login = () => {
+  const navigate = useNavigate()
+  const [phone, setPhone] = useState('')
+  const [password, setPassword] = useState('')
+  const loginData = {
+    phone: phone,
+    password: password
+  }
+  const HandleLogin = (e) => {
+    e.preventDefault()
+    axios.post('/api/users/login', loginData).then(res => {
+      console.log(loginData);
+      console.log(res);
+    })
+    navigate('/home')
+  }
+  // action='http://127.0.0.1:8080/api/users/login'
   return (
     <Wrapper>
       <div className="login">
         <div className="pic">
           <img src={loginPic} alt="" />
         </div>
-        <div className="form">
+        <form className="form" method='post' >
           <div className="phone">
-            <input class="phoneNumInput" id="phoneNumInput" type="tel" autocomplete="off" placeholder="请输入手机号" maxlength="11" />
-            <div class="sendCodeBtn" id="sendCodeBtn">
+            <input
+              className="phoneNumInput"
+              type="tel"
+              placeholder="请输入手机号"
+              maxLength="11"
+              onChange={(e) => setPhone(e.currentTarget.value)}
+              value={phone} />
+            <div className="sendCodeBtn" id="sendCodeBtn">
               <span >发送验证码</span>
             </div>
           </div>
           <div className="password">
-            <input class="codeInput" id="codeInput" type="number" maxlength="6" autocomplete="off" placeholder="请输入短信验证码" />
+            <input
+              className="codeInput"
+              type="number"
+              maxLength="6"
+              placeholder="请输入密码"
+              onChange={(e) => setPassword(e.currentTarget.value)}
+              value={password} />
           </div>
-          <button className='btn_login'>登录</button>
+          <input className='btn_login' onClick={(e) => HandleLogin(e)} type='submit' value='登录'></input>
+        </form>
+        <div className='tonext'>
+          <p>还没有账号？<span onClick={() => navigate('/register')}>请先注册</span></p>
         </div>
         <div className="license">
-          <div className="icon">
-            <i></i>
+          <div className="icon" >
+            <i onClick={(e) => {
+              e.currentTarget.classList.toggle('clickBG')
+            }}></i>
           </div>
           <div className="text">
             我已阅读并同意<a href="https://rules-center.meituan.com/m/detail/4" style={{ color: "#3488FF" }}>《美团用户协议》、</a>

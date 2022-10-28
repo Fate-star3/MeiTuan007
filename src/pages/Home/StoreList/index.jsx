@@ -1,12 +1,14 @@
-import React, { useState, useEffect, useRef,memo } from 'react'
+import React, { useState, useEffect, useRef, memo } from 'react'
 import { Wrapper } from './style'
-import { isFixed } from '@/api/utils'
+import { isFixed } from '@/utils'
 
- function StoreList(props) {
-    const [show, setShow] = useState(true)
-    const listRef = useRef()
+function StoreList(props) {
     const { methods, containerRef } = props
+    const [show, setShow] = useState(true)
     const [toTop, setToTop] = useState('none')
+    const listRef = useRef()
+
+
     const backTop = () => {
         window.scrollTo(0, 0)
     }
@@ -16,7 +18,7 @@ import { isFixed } from '@/api/utils'
     }, [])
 
     useEffect(() => {
-        window.addEventListener('scroll', function () {
+        function fn() {
             let height = window.innerHeight / 2
             var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
             if (scrollTop > height) {
@@ -24,8 +26,11 @@ import { isFixed } from '@/api/utils'
             } else {
                 setToTop('none')
             }
-        })
-
+        }
+        window.addEventListener('scroll', fn)
+        return () => {
+            window.removeEventListener('scroll', fn)
+        }
     }, [toTop])
     const modal = () => {
         methods(show)
@@ -33,7 +38,7 @@ import { isFixed } from '@/api/utils'
         if (show) {
             listRef.current.classList.add('fixed')
             containerRef.current.classList.add('fixed')
-          
+
         } else {
             listRef.current.classList.remove('fixed')
             containerRef.current.classList.remove('fixed')
