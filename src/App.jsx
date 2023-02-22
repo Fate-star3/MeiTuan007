@@ -1,11 +1,11 @@
 import RoutesConfig from './routes'
 import { Suspense, useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { tokenStorage } from '@/components/common/Storage/'
 
 // 全局组件
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { getCookie } from './utils/storage'
 
 function App() {
   const { pathname } = useLocation()
@@ -13,11 +13,11 @@ function App() {
 
   /** 初始化重定向 */
   const init = () => {
-    if (tokenStorage.getItem()) {
-      if (pathname === '/') navigate('/home')
+    if (getCookie('usertoken')&&getCookie('usertoken').length) {
+      if (pathname === '/' || pathname === '/home') navigate('/home')
     } else if (pathname === '/register') {
       navigate('/register')
-    } else if (pathname !== '/login') {
+    } else {
       navigate('/login')
     }
   }

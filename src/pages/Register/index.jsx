@@ -13,13 +13,13 @@ const Register = () => {
     phone: phone,
     password: password
   }
-  console.log(resigsterData);
+  // console.log(resigsterData);
   const HandleRegister = (e) => {
     e.preventDefault()
-    // axios.post('/api/users/register', resigsterData).then(res => {
-    //   console.log(resigsterData);
-    //   console.log(res);
-    // })
+    axios.post('/api/users/register', resigsterData).then(res => {
+      console.log(resigsterData);
+      console.log(res);
+    })
     navigate('/login')
 
   }
@@ -41,7 +41,7 @@ const Register = () => {
           </div>
           <div className="password">
             <input className="codeInput"
-              type="number"
+              type="password"
               maxLength="6"
               placeholder="请输入密码"
               onChange={(e) => setPassword(e.currentTarget.value)}

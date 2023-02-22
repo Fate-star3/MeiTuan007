@@ -4,6 +4,7 @@ import axios from 'axios'
 
 import { useNavigate } from 'react-router-dom'
 import loginPic from '@/assets/images/登录.png'
+import { setCookie } from '../../utils/storage'
 
 const Login = () => {
   const navigate = useNavigate()
@@ -18,8 +19,12 @@ const Login = () => {
     axios.post('/api/users/login', loginData).then(res => {
       console.log(loginData);
       console.log(res);
+     
+      
     })
+    setCookie('usertoken','token')
     navigate('/home')
+   
   }
   // action='http://127.0.0.1:8080/api/users/login'
   return (
@@ -44,7 +49,7 @@ const Login = () => {
           <div className="password">
             <input
               className="codeInput"
-              type="number"
+              type="password"
               maxLength="6"
               placeholder="请输入密码"
               onChange={(e) => setPassword(e.currentTarget.value)}

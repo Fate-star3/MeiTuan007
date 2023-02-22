@@ -34,22 +34,26 @@ router.post('/register', (req, res) => {
       // avatar,
       // identity: req.body.identity
       // 散列hash函数 信息加密
-      bcrypt.genSalt(10, function (err, salt) {
-        // 将加密后的密码替换用户密码
-        bcrypt.hash(newUser.password, salt, (err, hash) => {
-          if (err) {
-            console.log(req.body.phone, req.body.password);
-            throw err
-          } else {
-            newUser.password = hash;
-            newUser
-              .save()
-              .then(user => res.json(user))
-              .catch(err => console.log(err));
-          }
+      // bcrypt.genSalt(10, function (err, salt) {
+      //   // 将加密后的密码替换用户密码
+      //   bcrypt.hash(newUser.password, salt, (err, hash) => {
+      //     if (err) {
+      //       console.log(req.body.phone, req.body.password);
+      //       throw err
+      //     } else {
+      //       newUser.password = hash;
+      //       newUser
+      //         .save()
+      //         .then(user => res.json(user))
+      //         .catch(err => console.log(err));
+      //     }
 
-        });
-      });
+      //   });
+      // });
+      newUser
+        .save()
+        .then(user => res.json(user))
+        .catch(err => console.log(err));
     }
   });
 });
@@ -66,33 +70,34 @@ router.post('/login', (req, res) => {
   // 查询数据库
   User.findOne({ phone }).then(user => {
     if (!user) {
-      return res.status(404).json('用户不存在!');
+      return res.status(200).json('用户不存在!');
     }
 
     // 密码匹配
-    bcrypt.compare(password, user.password).then(isMatch => {
-      if (isMatch) {
-        const rule = {
-          id: user.id,
-          name: user.name,
-          avatar: user.avatar,
-          identity: user.identity
-        };
-        // 1.用户输入账户和密码请求服务器
-        // 2.服务器验证用户信息，返回用户一个token值
-        // 接收的参数： 规则  加密的名字   过期时间  回调函数
-        jwt.sign(rule, keys.secretOrKey, { expiresIn: 99999999999 }, (err, token) => {
-          if (err) throw err;
+    // bcrypt.compare(password, user.password).then(isMatch => {
+    //   if (isMatch) {
+    //     const rule = {
+    //       phone: user.phone,
+    //     };
+    //     // 1.用户输入账户和密码请求服务器
+    //     // 2.服务器验证用户信息，返回用户一个token值
+    //     // 接收的参数： 规则  加密的名字   过期时间  回调函数
 
-          res.json({
-            success: true,
-            token: 'qiqi520 ' + token
-          });
-        });
-        // res.json({msg:"success"});
-      } else {
-        return res.status(400).json('密码错误!');
-      }
+    //     // res.json({msg:"success"});
+    //   } else {
+    //     return res.status(400).json('密码错误!');
+    //   }
+    // });
+    const rule = {
+      phone: user.phone,
+    };
+    jwt.sign(rule, keys.secretOrKey, { expiresIn: 99999999999 }, (err, token) => {
+      if (err) throw err;
+
+      res.json({
+        success: true,
+        token: 'qiqi520 ' + token
+      });
     });
   });
 });
@@ -109,6 +114,15 @@ router.get(
       name: req.user.name,
       phone: req.user.phone,
       identity: req.user.identity
+    });
+  }
+);
+
+router.get(
+  '/test',
+  (req, res) => {
+    res.json({
+      id: 111,
     });
   }
 );
